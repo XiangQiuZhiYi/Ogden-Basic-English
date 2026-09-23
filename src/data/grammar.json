@@ -744,7 +744,7 @@
       "ogden-general",
       "grammar-summary"
     ],
-    "reviewStatus": "项目编辑待复核"
+    "reviewStatus": "结构已核验"
   },
   {
     "id": "scope-degree-placement",
@@ -802,6 +802,6 @@
       "ogden-general",
       "grammar-summary"
     ],
-    "reviewStatus": "项目编辑待复核"
+    "reviewStatus": "结构已核验"
   }
 ]

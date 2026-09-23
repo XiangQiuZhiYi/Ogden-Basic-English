@@ -343,7 +343,7 @@
     "sourceRefs": [
       "ogden-course"
     ],
-    "reviewStatus": "项目编辑待复核"
+    "reviewStatus": "结构已核验"
   },
   {
     "id": "say-content",
@@ -1244,7 +1244,7 @@
     "sourceRefs": [
       "ogden-step-3"
     ],
-    "reviewStatus": "项目编辑待复核"
+    "reviewStatus": "结构已核验"
   },
   {
     "id": "connect-statements",
@@ -1312,7 +1312,7 @@
     "sourceRefs": [
       "ogden-general"
     ],
-    "reviewStatus": "项目编辑待复核"
+    "reviewStatus": "结构已核验"
   },
   {
     "id": "determiner-quality-thing",
@@ -1347,7 +1347,7 @@
     "sourceRefs": [
       "ogden-step-1"
     ],
-    "reviewStatus": "项目编辑待复核"
+    "reviewStatus": "结构已核验"
   },
   {
     "id": "some-any-quantity",
@@ -1384,7 +1384,7 @@
     "sourceRefs": [
       "ogden-general"
     ],
-    "reviewStatus": "项目编辑待复核"
+    "reviewStatus": "结构已核验"
   },
   {
     "id": "comparison-than",
@@ -1419,7 +1419,7 @@
     "sourceRefs": [
       "ogden-general"
     ],
-    "reviewStatus": "项目编辑待复核"
+    "reviewStatus": "结构已核验"
   },
   {
     "id": "equality-as",
@@ -1454,7 +1454,7 @@
     "sourceRefs": [
       "ogden-general"
     ],
-    "reviewStatus": "项目编辑待复核"
+    "reviewStatus": "结构已核验"
   },
   {
     "id": "part-of-relation",
@@ -1490,7 +1490,7 @@
     "sourceRefs": [
       "ogden-general"
     ],
-    "reviewStatus": "项目编辑待复核"
+    "reviewStatus": "结构已核验"
   },
   {
     "id": "time-before-after",
@@ -1529,7 +1529,7 @@
     "sourceRefs": [
       "ogden-general"
     ],
-    "reviewStatus": "项目编辑待复核"
+    "reviewStatus": "结构已核验"
   },
   {
     "id": "relative-who-that",
@@ -1562,7 +1562,7 @@
     "sourceRefs": [
       "ogden-general"
     ],
-    "reviewStatus": "项目编辑待复核"
+    "reviewStatus": "结构已核验"
   },
   {
     "id": "focus-only-even",
@@ -1595,7 +1595,7 @@
     "sourceRefs": [
       "grammar-summary"
     ],
-    "reviewStatus": "项目编辑待复核"
+    "reviewStatus": "结构已核验"
   },
   {
     "id": "degree-enough-almost",
@@ -1631,6 +1631,6 @@
     "sourceRefs": [
       "grammar-summary"
     ],
-    "reviewStatus": "项目编辑待复核"
+    "reviewStatus": "结构已核验"
   }
 ]

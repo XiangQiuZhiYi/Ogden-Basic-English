@@ -63,9 +63,17 @@ for (const [index, word] of words.entries()) {
   }
   if (
     /^A (?:thing|quality) given the name/u.test(word.definition)
+    || /^A thing, act, condition, or idea given the name/u.test(word.definition)
+    || /^A thing, animal, or person you may see, with the name/u.test(word.definition)
     || word.definition === 'A structure word used in Basic English.'
   ) {
     warn(`${word.word}: English definition remains generic.`);
+  }
+  if (
+    (word.category === 'general_things' || word.category === 'picturable_things')
+    && new RegExp(`^The ${word.word.replace(/[.*+?^${}()|[\]\\]/gu, '\\$&')} (?:is|are) here\\.$`, 'iu').test(word.example)
+  ) {
+    warn(`${word.word}: still uses the generic thing example template.`);
   }
   if (!Array.isArray(word.senses) || !word.senses.length) {
     fail(`${word.word}: senses must be a non-empty array.`);
