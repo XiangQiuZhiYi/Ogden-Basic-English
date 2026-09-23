@@ -1,0 +1,1612 @@
+<!doctype html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="C. K. Ogden Basic English 850 词离线学习页：原始五分类、英式 IPA、中文释义、用法规则、内容审校状态与学习进度。"
+        />
+        <title>Ogden Basic English · 850 词可验证学习页</title>
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2318252f'/%3E%3Cpath d='M17 17h22c6 0 10 4 10 10v22H27c-6 0-10-4-10-10V17Z' fill='%23f5efe1'/%3E%3Cpath d='M27 17v32M34 25h9M34 32h9M34 39h7' stroke='%23b45309' stroke-width='3'/%3E%3C/svg%3E"
+        />
+        <style>
+            {{STYLES}}
+        </style>
+    </head>
+    <body>
+        <header class="mast shell">
+            <div class="mast-grid">
+                <div>
+                    <div class="eyebrow">C. K. Ogden · 1930</div>
+                    <h1>
+                        <span class="title-main">Basic English</span><br /><em
+                            >850 词</em
+                        ><span class="title-tail">可验证学习页</span>
+                    </h1>
+                    <p class="lede">
+                        按 Ogden 原始五分类整理。先掌握 operators
+                        与结构词，再用有限的 things 和 qualities 重新组织表达。
+                    </p>
+                </div>
+                <div class="edition">
+                    <strong>英式为主 · 单文件离线版</strong
+                    >词形、释义与例句分开标注来源和审校状态；开发态数据经自动校验后构建为本页。
+                </div>
+            </div>
+            <div class="stat-strip">
+                <div class="stat" data-cat-stat="operations">
+                    <b>100</b><span>Operations<br />操作及结构词</span>
+                </div>
+                <div class="stat" data-cat-stat="general_things">
+                    <b>400</b><span>General Things<br />一般事物词</span>
+                </div>
+                <div class="stat" data-cat-stat="picturable_things">
+                    <b>200</b><span>Picturable Things<br />可图示事物词</span>
+                </div>
+                <div class="stat" data-cat-stat="qualities_general">
+                    <b>100</b><span>General Qualities<br />一般性质词</span>
+                </div>
+                <div class="stat" data-cat-stat="qualities_opposites">
+                    <b>50</b><span>Opposite Qualities<br />反对性质词</span>
+                </div>
+            </div>
+            <div class="module-nav" role="tablist" aria-label="学习模块">
+                <button
+                    type="button"
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="panel-words"
+                    data-tab="words"
+                >
+                    850 Words / 词表</button
+                ><button
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="panel-grammar"
+                    data-tab="grammar"
+                    tabindex="-1"
+                >
+                    Grammar / 语法规则</button
+                ><button
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="panel-patterns"
+                    data-tab="patterns"
+                    tabindex="-1"
+                >
+                    Patterns / 常用句型</button
+                ><button
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="panel-communication"
+                    data-tab="communication"
+                    tabindex="-1"
+                >
+                    Communication / 常用沟通
+                </button>
+            </div>
+        </header>
+        <div
+            class="module-panel"
+            id="panel-words"
+            role="tabpanel"
+            aria-label="850 Words / 词表"
+        >
+            <div class="workspace">
+                <div class="shell">
+                    <div class="toolbar">
+                        <select id="subgroup" aria-label="Subgroup / 子分类">
+                            <option value="all">
+                                全部子分类
+                            </option></select
+                        ><label class="unlearned-filter" for="onlyUnlearned">
+                            <input id="onlyUnlearned" type="checkbox" />
+                            <span>只看未学习</span>
+                        </label
+                        ><button class="toolbar-btn" id="clear">
+                            重置
+                        </button>
+                    </div>
+                    <div class="filters" id="filters"></div>
+                </div>
+            </div>
+            <main class="shell content">
+                <aside class="side">
+                    <section class="progress-card">
+                        <div class="eyebrow">本机学习进度</div>
+                        <div class="progress-line">
+                            <strong
+                                ><span id="learnedCount">0</span> / 850</strong
+                            ><span id="progressPct">0%</span>
+                        </div>
+                        <div class="meter"><span id="meter"></span></div>
+                        <label class="voice-picker" for="voiceSelect"
+                            ><span>朗读女声</span
+                            ><select
+                                id="voiceSelect"
+                                aria-label="选择英语朗读语音"
+                            >
+                                <option>正在检测本机语音…</option>
+                            </select></label
+                        >
+                        <p class="voice-hint" id="voiceHint">
+                            优先选择英式女声；系统语音因设备而异。
+                        </p>
+                    </section>
+                    <section class="rules-card">
+                        <h2>不是普通的单词表</h2>
+                        <p>
+                            同一个拼写在普通英语中可有更多词性和义项；本页按
+                            Basic English 的受控用途学习。
+                        </p>
+                        <button
+                            class="rules-link"
+                            type="button"
+                            data-open-tab="grammar"
+                        >
+                            查看 Ogden 语法规则 →
+                        </button>
+                    </section>
+                </aside>
+                <section>
+                    <header class="result-head">
+                        <div>
+                            <div class="eyebrow" id="activeLabel">全部词项</div>
+                            <h2><span id="resultCount">850</span> 个结果</h2>
+                        </div>
+                        <p>点击词卡查看规则、来源与审校状态</p>
+                    </header>
+                    <div class="grid" id="wordGrid" aria-live="polite"></div>
+                    <button class="load" id="loadMore" hidden>显示更多</button>
+                </section>
+            </main>
+        </div>
+        <section
+            class="shell rules module-panel"
+            id="panel-grammar"
+            role="tabpanel"
+            aria-label="Grammar / 语法规则"
+            hidden
+        >
+            <div class="rules-head">
+                <div>
+                    <div class="module-kicker">Module 01</div>
+                    <h2>Ogden Basic English 语法规则</h2>
+                </div>
+                <p class="intro">
+                    Basic English 不是把普通英语简单缩短，而是用有限的
+                    operators、things、qualities 和 directions
+                    重新组织表达。下面是学习和造句时应遵守的核心结构。
+                </p>
+            </div>
+            <div class="operators">
+                <span>come</span><span>get</span><span>give</span><span>go</span
+                ><span>keep</span><span>let</span><span>make</span
+                ><span>put</span><span>seem</span><span>take</span
+                ><span>be</span><span>do</span><span>have</span><span>say</span
+                ><span>see</span><span>send</span><span>may</span
+                ><span>will</span>
+            </div>
+            <div class="rule-grid" id="grammarContent">
+                <article class="rule">
+                    <h3>1 · 基本句序</h3>
+                    <p>
+                        陈述句先交代行动者，再放 operator，然后是受到作用的
+                        thing，最后补充方向、性质、地点或时间。
+                    </p>
+                    <div class="rule-formula">
+                        SUBJECT + OPERATOR + THING + DIRECTION / QUALITY
+                    </div>
+                    <ul>
+                        <li>命令句可以省略行动者：Put the book here.</li>
+                        <li>时间通常放在句末；需要强调时也可放在句首。</li>
+                        <li>
+                            先建立短主干，再逐项加入修饰，不照搬中文长句顺序。
+                        </li>
+                    </ul>
+                    <div class="grammar-example">
+                        <strong>I put the book on the table.</strong
+                        ><span>我把书放在桌子上。</span>
+                    </div>
+                    <p class="rule-note">
+                        常见误区：把普通英语中的任何动作词直接当作核心动词使用。
+                    </p>
+                </article>
+                <article class="rule">
+                    <h3>2 · 18 个 operators</h3>
+                    <p>
+                        18 个 operators 是系统的动力来源。它们与
+                        thing、quality、direction
+                        组合，替代普通英语中的大量专门动词。
+                    </p>
+                    <div class="rule-formula">
+                        OPERATOR + THING / QUALITY / DIRECTION
+                    </div>
+                    <ul>
+                        <li>移动与取得：come、go、get、take、put、send。</li>
+                        <li>造成与控制：make、give、keep、let、do、have。</li>
+                        <li>
+                            状态与认识：be、seem、say、see；may、will
+                            提供情态和将来。
+                        </li>
+                    </ul>
+                    <div class="grammar-example">
+                        <strong>Make the room clean.</strong
+                        ><span>把房间弄干净。</span>
+                    </div>
+                    <div class="grammar-example">
+                        <strong>Give him a push.</strong><span>推他一下。</span>
+                    </div>
+                    <p class="rule-note">
+                        变化落在 operator 上，后面的 action-thing 保持名词身份。
+                    </p>
+                </article>
+                <article class="rule">
+                    <h3>3 · 时间与 operator 变化</h3>
+                    <p>
+                        现在、过去、完成和将来主要通过 operator
+                        的有限变化表示，不让普通 thing 自由变成动词。
+                    </p>
+                    <div class="rule-formula">
+                        PRESENT · PAST · WILL + BASE · HAVE + PARTICIPLE
+                    </div>
+                    <ul>
+                        <li>第三人称单数使用 comes、gets、makes 等形式。</li>
+                        <li>
+                            be、do、have 以及 came、went、gave
+                            等不规则形式需要单独掌握。
+                        </li>
+                        <li>
+                            may、will 后接 operator
+                            原形；时间词帮助明确发生时间。
+                        </li>
+                    </ul>
+                    <div class="grammar-example">
+                        <strong>I came yesterday. I will come tomorrow.</strong
+                        ><span>我昨天来了。我明天会来。</span>
+                    </div>
+                    <div class="grammar-example">
+                        <strong>He has done the work.</strong
+                        ><span>他已经完成了工作。</span>
+                    </div>
+                </article>
+                <article class="rule">
+                    <h3>4 · 否定与疑问</h3>
+                    <p>
+                        一般结构借助 do；be、have、may、will 可直接接 not
+                        或移到行动者前面。疑问词放在疑问结构前。
+                    </p>
+                    <div class="rule-formula">
+                        DO + SUBJECT + OPERATOR? · SUBJECT + DO NOT + OPERATOR
+                    </div>
+                    <ul>
+                        <li>一般疑问：Do you see it?</li>
+                        <li>否定：I do not see it.</li>
+                        <li>
+                            be/may/will：Is it clear? May I go? Will he come?
+                        </li>
+                    </ul>
+                    <div class="grammar-example">
+                        <strong>Where is the book? Why did he go?</strong
+                        ><span>书在哪里？他为什么走了？</span>
+                    </div>
+                    <p class="rule-note">
+                        do 已表示时间时，后面的 operator 回到原形。
+                    </p>
+                </article>
+                <article class="rule">
+                    <h3>5 · directions 组合</h3>
+                    <p>
+                        方向词既说明空间关系，也能与 operator
+                        形成透明的动作组合。理解各部分，比死记一个新动词更重要。
+                    </p>
+                    <div class="rule-formula">
+                        GO / COME / PUT / TAKE + IN · OUT · UP · DOWN · THROUGH…
+                    </div>
+                    <ul>
+                        <li>位置：The book is on the table.</li>
+                        <li>运动：Go through the door.</li>
+                        <li>改变位置：Take the coat off. Put the coat on.</li>
+                    </ul>
+                    <div class="grammar-example">
+                        <strong>Put the book in the box.</strong
+                        ><span>把书放进盒子里。</span>
+                    </div>
+                    <p class="rule-note">
+                        同一方向词会随 operator
+                        和对象改变整体效果，但仍从组成部分理解。
+                    </p>
+                </article>
+                <article class="rule">
+                    <h3>6 · action-noun 结构</h3>
+                    <p>
+                        attack、talk、answer、decision 等在严格 Basic 中优先按
+                        thing 使用，以 operator 表达“做这个动作”。
+                    </p>
+                    <div class="rule-formula">
+                        MAKE / GIVE / HAVE / TAKE + ACTION-THING
+                    </div>
+                    <ul>
+                        <li>make：产生结果，如 make a decision。</li>
+                        <li>
+                            give：动作指向别人，如 give an answer、give a push。
+                        </li>
+                        <li>
+                            have/take：进行或经历，如 have a talk、take a walk。
+                        </li>
+                    </ul>
+                    <div class="grammar-example">
+                        <strong>We had a talk and made a decision.</strong
+                        ><span>我们谈了一次，并作出了决定。</span>
+                    </div>
+                    <p class="rule-note">
+                        不要因为一个 thing
+                        在普通英语里也能作动词，就自动允许其动词用法。
+                    </p>
+                </article>
+                <article class="rule">
+                    <h3>7 · 名词、冠词与复数</h3>
+                    <p>
+                        thing 按可数性和指代范围选择
+                        a/an、the、some、any；复数只在意义允许时使用。
+                    </p>
+                    <div class="rule-formula">
+                        A / AN + ONE THING · THE + KNOWN THING · SOME / ANY +
+                        AMOUNT
+                    </div>
+                    <ul>
+                        <li>第一次提到一个可数事物通常用 a/an。</li>
+                        <li>双方已经知道的对象用 the。</li>
+                        <li>
+                            规则复数加 -s/-es；man/men、foot/feet
+                            等不规则形式单记。
+                        </li>
+                    </ul>
+                    <div class="grammar-example">
+                        <strong>I have a book. The book is here.</strong
+                        ><span>我有一本书。这本书在这里。</span>
+                    </div>
+                    <div class="grammar-example">
+                        <strong>Do you have any water?</strong
+                        ><span>你有水吗？</span>
+                    </div>
+                </article>
+                <article class="rule">
+                    <h3>8 · qualities 的位置</h3>
+                    <p>
+                        quality 可以直接修饰
+                        thing，也可以在系联结构中说明状态，或放在对象之后表示造成或保持的结果。
+                    </p>
+                    <div class="rule-formula">
+                        QUALITY + THING · BE/SEEM/GET + QUALITY · MAKE/KEEP +
+                        THING + QUALITY
+                    </div>
+                    <ul>
+                        <li>a small box：放在 thing 前限定性质。</li>
+                        <li>The box is small：用 be 陈述状态。</li>
+                        <li>Keep it dry：用 keep 表示状态持续。</li>
+                    </ul>
+                    <div class="grammar-example">
+                        <strong>The room seems cold. Make it warm.</strong
+                        ><span>房间似乎很冷。把它弄暖。</span>
+                    </div>
+                </article>
+                <article class="rule">
+                    <h3>9 · qualities 的比较</h3>
+                    <p>
+                        Basic 用 more/most 表示程度；标准英语中正常使用的
+                        -er/-est 形式也可保留。good、bad
+                        等不规则形式需要单独掌握。
+                    </p>
+                    <div class="rule-formula">
+                        MORE / MOST + QUALITY · STANDARD -ER / -EST WHEN
+                        PERMITTED
+                    </div>
+                    <ul>
+                        <li>small → smaller → smallest。</li>
+                        <li>good → better → best；bad → worse → worst。</li>
+                        <li>
+                            只有语义上有程度差异的 quality
+                            才适合比较；first、dead、left 等不能机械套用比较级。
+                        </li>
+                    </ul>
+                    <div class="grammar-example">
+                        <strong>This box is smaller than that.</strong
+                        ><span>这个盒子比那个小。</span>
+                    </div>
+                    <p class="rule-note">
+                        本页使用逐词白名单，不再通过拼写规则自动制造比较形式。
+                    </p>
+                </article>
+                <article class="rule">
+                    <h3>10 · 限定、指代与数量</h3>
+                    <p>
+                        限定词确定 thing
+                        的范围；代词避免重复；数量词必须与可数或不可数意义协调。
+                    </p>
+                    <div class="rule-formula">
+                        DETERMINER + THING · PRONOUN + OPERATOR
+                    </div>
+                    <ul>
+                        <li>this/that 指单个对象；all/every 涵盖整体。</li>
+                        <li>some 常用于肯定信息，any 常用于疑问或否定。</li>
+                        <li>
+                            much/little
+                            主要搭配不可数意义；代词形式按句中功能变化。
+                        </li>
+                    </ul>
+                    <div class="grammar-example">
+                        <strong>Give me some water. Do you have any?</strong
+                        ><span>给我一些水。你有吗？</span>
+                    </div>
+                </article>
+                <article class="rule">
+                    <h3>11 · 连接、从句与修饰</h3>
+                    <p>
+                        and、but、or 连接并列信息；because、if、though、while
+                        建立原因、条件、让步和时间关系；who、when、where、why、how
+                        用来提问或连接。
+                    </p>
+                    <div class="rule-formula">
+                        STATEMENT + CONNECTIVE + STATEMENT
+                    </div>
+                    <ul>
+                        <li>because 给出原因；if 给出条件。</li>
+                        <li>but/though 表示与预期不同；while 表示同时发生。</li>
+                        <li>-ly 形式只在规则许可且意义清楚时作方式修饰。</li>
+                    </ul>
+                    <div class="grammar-example">
+                        <strong>I came because he sent for me.</strong
+                        ><span>我来了，因为他派人来找我。</span>
+                    </div>
+                    <div class="grammar-example">
+                        <strong>Come if you are ready.</strong
+                        ><span>如果你准备好了，就来吧。</span>
+                    </div>
+                </article>
+                <article class="rule">
+                    <h3>12 · 派生、复合与词汇边界</h3>
+                    <p>
+                        核心850词可以使用明确许可的词形和透明复合；专名、数字、国际词及专业术语属于额外层，不应混入核心词统计。
+                    </p>
+                    <div class="rule-formula">
+                        CORE 850 + PERMITTED FORMS + MARKED SPECIAL WORDS
+                    </div>
+                    <ul>
+                        <li>
+                            允许的复数、operator 变化和比较形式不算新核心词。
+                        </li>
+                        <li>
+                            复合必须能从组成部分直接理解，不能借复合无限扩张词义。
+                        </li>
+                        <li>
+                            专业交流可以加入必要术语，但应显式标记其外部身份。
+                        </li>
+                    </ul>
+                    <div class="grammar-example">
+                        <strong>The train will go north.</strong
+                        ><span>火车将向北行驶。</span>
+                    </div>
+                    <p class="rule-note">
+                        拿不准时，回到 operator + thing/quality/direction
+                        的核心结构重新表达。
+                    </p>
+                </article>
+            </div>
+        </section>
+        <section
+            class="shell patterns module-panel"
+            id="panel-patterns"
+            role="tabpanel"
+            aria-label="Patterns / 常用句型"
+            hidden
+        >
+            <header class="patterns-head">
+                <div>
+                    <div class="module-kicker">Module 02</div>
+                    <h2>Ogden Basic English 常用句型</h2>
+                </div>
+                <p>
+                    先按表达功能选择句型，再替换 thing、quality、direction
+                    等槽位。句型与语法规则、18 个 operators 和词条例句互相关联。
+                </p>
+            </header>
+            <div class="pattern-toolbar">
+                <div class="pattern-filter-row" id="patternFamilies" aria-label="按功能筛选句型"></div>
+                <div class="pattern-filter-row operators" id="patternOperators" aria-label="按 operator 筛选句型"></div>
+            </div>
+            <p class="pattern-result"><strong id="patternCount">0</strong> 个句型</p>
+            <div class="pattern-grid" id="patternGrid" aria-live="polite"></div>
+        </section>
+        <section
+            class="shell communication module-panel"
+            id="panel-communication"
+            role="tabpanel"
+            aria-label="Communication / 常用沟通"
+            hidden
+        >
+            <header class="communication-head">
+                <div>
+                    <div class="module-kicker">Module 03</div>
+                    <h2>Basic English 常用沟通句子</h2>
+                </div>
+                <p class="communication-intro">
+                    共 56
+                    句，按常见场景组织。每句使用核心词或规则允许的词形，并提供中文、逐词宽式
+                    IPA 参考和系统语音朗读。
+                </p>
+            </header>
+            <div class="phrase-groups">
+                <section class="phrase-group">
+                    <header>
+                        <span>01</span>
+                        <h3>Meeting people / 见面交流</h3>
+                    </header>
+                    <div class="phrase-list">
+                        <article class="phrase">
+                            <div class="phrase-number">1</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">Good morning.</strong>
+                                <div class="phrase-ipa">/ɡˈʊd mˈɔːnɪŋ/</div>
+                                <p>早上好。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="Good morning."
+                                aria-label="朗读 Good morning."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">2</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">How are you?</strong>
+                                <div class="phrase-ipa">/hˈaʊ ɑː jˈuː/</div>
+                                <p>你好吗？</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="How are you?"
+                                aria-label="朗读 How are you?"
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">3</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">I am very well.</strong>
+                                <div class="phrase-ipa">
+                                    /ˈaɪ æm vˈɛɹi wˈɛl/
+                                </div>
+                                <p>我很好。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="I am very well."
+                                aria-label="朗读 I am very well."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">4</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">I am a friend.</strong>
+                                <div class="phrase-ipa">/ˈaɪ æm ə fɹˈɛnd/</div>
+                                <p>我是朋友。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="I am a friend."
+                                aria-label="朗读 I am a friend."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">5</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">Who is that?</strong>
+                                <div class="phrase-ipa">/hˈuː ˈɪz ðˈæt/</div>
+                                <p>那是谁？</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="Who is that?"
+                                aria-label="朗读 Who is that?"
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">6</div>
+                            <div class="phrase-copy">
+                                <strong lang="en"
+                                    >It is good to see you.</strong
+                                >
+                                <div class="phrase-ipa">
+                                    /ˈɪt ˈɪz ɡˈʊd tˈuː sˈiː jˈuː/
+                                </div>
+                                <p>见到你很高兴。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="It is good to see you."
+                                aria-label="朗读 It is good to see you."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">7</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">Please come in.</strong>
+                                <div class="phrase-ipa">/plˈiːz kˈʌm ˈɪn/</div>
+                                <p>请进。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="Please come in."
+                                aria-label="朗读 Please come in."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">8</div>
+                            <div class="phrase-copy">
+                                <strong lang="en"
+                                    >I will see you tomorrow.</strong
+                                >
+                                <div class="phrase-ipa">
+                                    /ˈaɪ wˈɪl sˈiː jˈuː təmˈɒɹəʊ/
+                                </div>
+                                <p>我明天会见你。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="I will see you tomorrow."
+                                aria-label="朗读 I will see you tomorrow."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                    </div>
+                </section>
+                <section class="phrase-group">
+                    <header>
+                        <span>02</span>
+                        <h3>Requests / 请求</h3>
+                    </header>
+                    <div class="phrase-list">
+                        <article class="phrase">
+                            <div class="phrase-number">1</div>
+                            <div class="phrase-copy">
+                                <strong lang="en"
+                                    >Please give me some water.</strong
+                                >
+                                <div class="phrase-ipa">
+                                    /plˈiːz ɡˈɪv mˈiː sˈʌm wˈɔːtɐ/
+                                </div>
+                                <p>请给我一些水。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="Please give me some water."
+                                aria-label="朗读 Please give me some water."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">2</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">May I have this?</strong>
+                                <div class="phrase-ipa">
+                                    /mˈeɪ ˈaɪ hæv ðˈɪs/
+                                </div>
+                                <p>我可以拿这个吗？</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="May I have this?"
+                                aria-label="朗读 May I have this?"
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">3</div>
+                            <div class="phrase-copy">
+                                <strong lang="en"
+                                    >Please say that again.</strong
+                                >
+                                <div class="phrase-ipa">
+                                    /plˈiːz sˈeɪ ðˈæt ɐɡˈɛn/
+                                </div>
+                                <p>请再说一遍。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="Please say that again."
+                                aria-label="朗读 Please say that again."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">4</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">Please make it clear.</strong>
+                                <div class="phrase-ipa">
+                                    /plˈiːz mˈeɪk ˈɪt klˈiə/
+                                </div>
+                                <p>请把它说明白。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="Please make it clear."
+                                aria-label="朗读 Please make it clear."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">5</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">Please put it here.</strong>
+                                <div class="phrase-ipa">
+                                    /plˈiːz pʊt ˈɪt hˈiə/
+                                </div>
+                                <p>请把它放在这里。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="Please put it here."
+                                aria-label="朗读 Please put it here."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">6</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">Please come with me.</strong>
+                                <div class="phrase-ipa">
+                                    /plˈiːz kˈʌm wˈɪð mˈiː/
+                                </div>
+                                <p>请跟我来。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="Please come with me."
+                                aria-label="朗读 Please come with me."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">7</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">May I take this?</strong>
+                                <div class="phrase-ipa">
+                                    /mˈeɪ ˈaɪ tˈeɪk ðˈɪs/
+                                </div>
+                                <p>我可以拿这个吗？</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="May I take this?"
+                                aria-label="朗读 May I take this?"
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">8</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">Please let me see it.</strong>
+                                <div class="phrase-ipa">
+                                    /plˈiːz lˈɛt mˈiː sˈiː ˈɪt/
+                                </div>
+                                <p>请让我看看。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="Please let me see it."
+                                aria-label="朗读 Please let me see it."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                    </div>
+                </section>
+                <section class="phrase-group">
+                    <header>
+                        <span>03</span>
+                        <h3>Understanding / 理解与确认</h3>
+                    </header>
+                    <div class="phrase-list">
+                        <article class="phrase">
+                            <div class="phrase-number">1</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">Is this right?</strong>
+                                <div class="phrase-ipa">/ˈɪz ðˈɪs ɹˈaɪt/</div>
+                                <p>这是对的吗？</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="Is this right?"
+                                aria-label="朗读 Is this right?"
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">2</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">That is not clear.</strong>
+                                <div class="phrase-ipa">
+                                    /ðˈæt ˈɪz nˈɒt klˈiə/
+                                </div>
+                                <p>那不清楚。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="That is not clear."
+                                aria-label="朗读 That is not clear."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">3</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">I have a question.</strong>
+                                <div class="phrase-ipa">
+                                    /ˈaɪ hæv ə kwˈɛstʃən/
+                                </div>
+                                <p>我有一个问题。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="I have a question."
+                                aria-label="朗读 I have a question."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">4</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">May I put a question?</strong>
+                                <div class="phrase-ipa">
+                                    /mˈeɪ ˈaɪ pʊt ə kwˈɛstʃən/
+                                </div>
+                                <p>我可以提一个问题吗？</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="May I put a question?"
+                                aria-label="朗读 May I put a question?"
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">5</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">Do you see my point?</strong>
+                                <div class="phrase-ipa">
+                                    /duː jˈuː sˈiː mˈaɪ pˈɔɪnt/
+                                </div>
+                                <p>你明白我的意思吗？</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="Do you see my point?"
+                                aria-label="朗读 Do you see my point?"
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">6</div>
+                            <div class="phrase-copy">
+                                <strong lang="en"
+                                    >We have the same idea.</strong
+                                >
+                                <div class="phrase-ipa">
+                                    /wˈiː hæv ðə sˈeɪm aɪdˈiə/
+                                </div>
+                                <p>我们的想法相同。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="We have the same idea."
+                                aria-label="朗读 We have the same idea."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">7</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">Is that your answer?</strong>
+                                <div class="phrase-ipa">
+                                    /ˈɪz ðˈæt jˈɔː ˈɑːnsɐ/
+                                </div>
+                                <p>那是你的回答吗？</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="Is that your answer?"
+                                aria-label="朗读 Is that your answer?"
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">8</div>
+                            <div class="phrase-copy">
+                                <strong lang="en"
+                                    >Please give me an example.</strong
+                                >
+                                <div class="phrase-ipa">
+                                    /plˈiːz ɡˈɪv mˈiː ˈɐn ɛɡzˈɑːmpəl/
+                                </div>
+                                <p>请给我一个例子。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="Please give me an example."
+                                aria-label="朗读 Please give me an example."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                    </div>
+                </section>
+                <section class="phrase-group">
+                    <header>
+                        <span>04</span>
+                        <h3>Food and trade / 饮食与交易</h3>
+                    </header>
+                    <div class="phrase-list">
+                        <article class="phrase">
+                            <div class="phrase-number">1</div>
+                            <div class="phrase-copy">
+                                <strong lang="en"
+                                    >Please give me some bread.</strong
+                                >
+                                <div class="phrase-ipa">
+                                    /plˈiːz ɡˈɪv mˈiː sˈʌm bɹˈɛd/
+                                </div>
+                                <p>请给我一些面包。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="Please give me some bread."
+                                aria-label="朗读 Please give me some bread."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">2</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">May I have some milk?</strong>
+                                <div class="phrase-ipa">
+                                    /mˈeɪ ˈaɪ hæv sˈʌm mˈɪlk/
+                                </div>
+                                <p>我可以要一些牛奶吗？</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="May I have some milk?"
+                                aria-label="朗读 May I have some milk?"
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">3</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">How much is this?</strong>
+                                <div class="phrase-ipa">
+                                    /hˈaʊ mˈʌtʃ ˈɪz ðˈɪs/
+                                </div>
+                                <p>这个多少钱？</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="How much is this?"
+                                aria-label="朗读 How much is this?"
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">4</div>
+                            <div class="phrase-copy">
+                                <strong lang="en"
+                                    >The price is very high.</strong
+                                >
+                                <div class="phrase-ipa">
+                                    /ðə pɹˈaɪs ˈɪz vˈɛɹi hˈaɪ/
+                                </div>
+                                <p>价格很高。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="The price is very high."
+                                aria-label="朗读 The price is very high."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">5</div>
+                            <div class="phrase-copy">
+                                <strong lang="en"
+                                    >This is more than enough.</strong
+                                >
+                                <div class="phrase-ipa">
+                                    /ðˈɪs ˈɪz mˈɔː ðˈɐn ɪnˈʌf/
+                                </div>
+                                <p>这已经绰绰有余。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="This is more than enough."
+                                aria-label="朗读 This is more than enough."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">6</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">Have you any food?</strong>
+                                <div class="phrase-ipa">
+                                    /hæv jˈuː ˈɛni fˈuːd/
+                                </div>
+                                <p>你有食物吗？</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="Have you any food?"
+                                aria-label="朗读 Have you any food?"
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">7</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">I have no money.</strong>
+                                <div class="phrase-ipa">
+                                    /ˈaɪ hæv nəʊ mˈʌni/
+                                </div>
+                                <p>我没有钱。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="I have no money."
+                                aria-label="朗读 I have no money."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">8</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">I will take this.</strong>
+                                <div class="phrase-ipa">
+                                    /ˈaɪ wˈɪl tˈeɪk ðˈɪs/
+                                </div>
+                                <p>我要这个。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="I will take this."
+                                aria-label="朗读 I will take this."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                    </div>
+                </section>
+                <section class="phrase-group">
+                    <header>
+                        <span>05</span>
+                        <h3>Road and transport / 问路与出行</h3>
+                    </header>
+                    <div class="phrase-list">
+                        <article class="phrase">
+                            <div class="phrase-number">1</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">Where is the station?</strong>
+                                <div class="phrase-ipa">
+                                    /wˈeə ˈɪz ðə stˈeɪʃən/
+                                </div>
+                                <p>车站在哪里？</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="Where is the station?"
+                                aria-label="朗读 Where is the station?"
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">2</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">Is it far from here?</strong>
+                                <div class="phrase-ipa">
+                                    /ˈɪz ˈɪt fˈɑː fɹˈɒm hˈiə/
+                                </div>
+                                <p>离这里远吗？</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="Is it far from here?"
+                                aria-label="朗读 Is it far from here?"
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">3</div>
+                            <div class="phrase-copy">
+                                <strong lang="en"
+                                    >This road goes to the station.</strong
+                                >
+                                <div class="phrase-ipa">
+                                    /ðˈɪs ɹˈəʊd ɡˈəʊz tˈuː ðə stˈeɪʃən/
+                                </div>
+                                <p>这条路通向车站。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="This road goes to the station."
+                                aria-label="朗读 This road goes to the station."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">4</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">Go down this road.</strong>
+                                <div class="phrase-ipa">
+                                    /ɡˈəʊ dˈaʊn ðˈɪs ɹˈəʊd/
+                                </div>
+                                <p>沿着这条路往下走。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="Go down this road."
+                                aria-label="朗读 Go down this road."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">5</div>
+                            <div class="phrase-copy">
+                                <strong lang="en"
+                                    >The station is on the left.</strong
+                                >
+                                <div class="phrase-ipa">
+                                    /ðə stˈeɪʃən ˈɪz ˈɒn ðə lˈɛft/
+                                </div>
+                                <p>车站在左边。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="The station is on the left."
+                                aria-label="朗读 The station is on the left."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">6</div>
+                            <div class="phrase-copy">
+                                <strong lang="en"
+                                    >The station is on the right.</strong
+                                >
+                                <div class="phrase-ipa">
+                                    /ðə stˈeɪʃən ˈɪz ˈɒn ðə ɹˈaɪt/
+                                </div>
+                                <p>车站在右边。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="The station is on the right."
+                                aria-label="朗读 The station is on the right."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">7</div>
+                            <div class="phrase-copy">
+                                <strong lang="en"
+                                    >When will we get there?</strong
+                                >
+                                <div class="phrase-ipa">
+                                    /wˈɛn wˈɪl wˈiː ɡˈɛt ðˈeə/
+                                </div>
+                                <p>我们什么时候到那里？</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="When will we get there?"
+                                aria-label="朗读 When will we get there?"
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">8</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">I will go by train.</strong>
+                                <div class="phrase-ipa">
+                                    /ˈaɪ wˈɪl ɡˈəʊ bˈaɪ tɹˈeɪn/
+                                </div>
+                                <p>我会乘火车去。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="I will go by train."
+                                aria-label="朗读 I will go by train."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                    </div>
+                </section>
+                <section class="phrase-group">
+                    <header>
+                        <span>06</span>
+                        <h3>Time and work / 时间与工作</h3>
+                    </header>
+                    <div class="phrase-list">
+                        <article class="phrase">
+                            <div class="phrase-number">1</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">When is the meeting?</strong>
+                                <div class="phrase-ipa">
+                                    /wˈɛn ˈɪz ðə mˈiːtɪŋ/
+                                </div>
+                                <p>会议什么时候开始？</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="When is the meeting?"
+                                aria-label="朗读 When is the meeting?"
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">2</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">I will come tomorrow.</strong>
+                                <div class="phrase-ipa">
+                                    /ˈaɪ wˈɪl kˈʌm təmˈɒɹəʊ/
+                                </div>
+                                <p>我明天会来。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="I will come tomorrow."
+                                aria-label="朗读 I will come tomorrow."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">3</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">I came yesterday.</strong>
+                                <div class="phrase-ipa">
+                                    /ˈaɪ kˈeɪm jˈɛstədˌeɪ/
+                                </div>
+                                <p>我昨天来了。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="I came yesterday."
+                                aria-label="朗读 I came yesterday."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">4</div>
+                            <div class="phrase-copy">
+                                <strong lang="en"
+                                    >The work is almost done.</strong
+                                >
+                                <div class="phrase-ipa">
+                                    /ðə wˈɜːk ˈɪz ˈɔːlməʊst dˈʌn/
+                                </div>
+                                <p>工作快完成了。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="The work is almost done."
+                                aria-label="朗读 The work is almost done."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">5</div>
+                            <div class="phrase-copy">
+                                <strong lang="en"
+                                    >Please send the letter.</strong
+                                >
+                                <div class="phrase-ipa">
+                                    /plˈiːz sˈɛnd ðə lˈɛtɐ/
+                                </div>
+                                <p>请把信寄出去。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="Please send the letter."
+                                aria-label="朗读 Please send the letter."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">6</div>
+                            <div class="phrase-copy">
+                                <strong lang="en"
+                                    >I will give you an answer.</strong
+                                >
+                                <div class="phrase-ipa">
+                                    /ˈaɪ wˈɪl ɡˈɪv jˈuː ˈɐn ˈɑːnsɐ/
+                                </div>
+                                <p>我会给你答复。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="I will give you an answer."
+                                aria-label="朗读 I will give you an answer."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">7</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">We may make a change.</strong>
+                                <div class="phrase-ipa">
+                                    /wˈiː mˈeɪ mˈeɪk ə tʃˈeɪndʒ/
+                                </div>
+                                <p>我们可以作出改变。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="We may make a change."
+                                aria-label="朗读 We may make a change."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">8</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">Please do this work.</strong>
+                                <div class="phrase-ipa">
+                                    /plˈiːz duː ðˈɪs wˈɜːk/
+                                </div>
+                                <p>请做这项工作。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="Please do this work."
+                                aria-label="朗读 Please do this work."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                    </div>
+                </section>
+                <section class="phrase-group">
+                    <header>
+                        <span>07</span>
+                        <h3>Help and safety / 求助与安全</h3>
+                    </header>
+                    <div class="phrase-list">
+                        <article class="phrase">
+                            <div class="phrase-number">1</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">Please give me help.</strong>
+                                <div class="phrase-ipa">
+                                    /plˈiːz ɡˈɪv mˈiː hˈɛlp/
+                                </div>
+                                <p>请帮助我。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="Please give me help."
+                                aria-label="朗读 Please give me help."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">2</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">I have a pain here.</strong>
+                                <div class="phrase-ipa">
+                                    /ˈaɪ hæv ə pˈeɪn hˈiə/
+                                </div>
+                                <p>我这里疼。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="I have a pain here."
+                                aria-label="朗读 I have a pain here."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">3</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">Please send for help.</strong>
+                                <div class="phrase-ipa">
+                                    /plˈiːz sˈɛnd fˈɔː hˈɛlp/
+                                </div>
+                                <p>请叫人来帮忙。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="Please send for help."
+                                aria-label="朗读 Please send for help."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">4</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">He is very ill.</strong>
+                                <div class="phrase-ipa">
+                                    /hiː ˈɪz vˈɛɹi ˈɪl/
+                                </div>
+                                <p>他病得很重。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="He is very ill."
+                                aria-label="朗读 He is very ill."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">5</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">There is a fire.</strong>
+                                <div class="phrase-ipa">/ðˈeə ˈɪz ə fˈaɪə/</div>
+                                <p>发生火灾了。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="There is a fire."
+                                aria-label="朗读 There is a fire."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">6</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">We are in danger.</strong>
+                                <div class="phrase-ipa">
+                                    /wˈiː ɑː ˈɪn dˈeɪndʒɐ/
+                                </div>
+                                <p>我们有危险。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="We are in danger."
+                                aria-label="朗读 We are in danger."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">7</div>
+                            <div class="phrase-copy">
+                                <strong lang="en"
+                                    >Please take me to a safe place.</strong
+                                >
+                                <div class="phrase-ipa">
+                                    /plˈiːz tˈeɪk mˈiː tˈuː ə sˈeɪf plˈeɪs/
+                                </div>
+                                <p>请带我到安全的地方。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="Please take me to a safe place."
+                                aria-label="朗读 Please take me to a safe place."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                        <article class="phrase">
+                            <div class="phrase-number">8</div>
+                            <div class="phrase-copy">
+                                <strong lang="en">Help is here.</strong>
+                                <div class="phrase-ipa">/hˈɛlp ˈɪz hˈiə/</div>
+                                <p>援助已经到了。</p>
+                            </div>
+                            <button
+                                class="phrase-speak"
+                                data-speak="Help is here."
+                                aria-label="朗读 Help is here."
+                            >
+                                ▶
+                            </button>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="shell">
+                <p>
+                    <span class="validation"
+                        ><span class="dot"></span>结构校验通过：850 个唯一词项 ·
+                        五类数量正确 · 禁止机械错误词形</span
+                    >
+                </p>
+                <p>
+                    版本 {{VERSION}}。词项与五分类依据 Ogden 原序；英式 IPA
+                    来源为
+                    <a href="https://github.com/open-dict-data/ipa-dict"
+                        >open-dict-data/ipa-dict</a
+                    >。教学释义、允许形式和例句均为项目编辑内容，不冒充 Ogden
+                    原文。原始词表参考：<a
+                        href="https://englishes-mooc.org/media/pages/course/module-6-constructed-language/ac63dd8647-1574625141/ogdens-basic-english.pdf"
+                        >Ogden's Basic English word list</a
+                    >。
+                </p>
+                <p>
+                    内容状态：{{REVIEW_SUMMARY}}。自动校验保证结构和明确禁用项，不代替语言学人工审校；浏览器朗读依赖本机安装的英语语音。
+                </p>
+            </div>
+        </footer>
+        <button
+            class="to-top"
+            id="toTop"
+            aria-label="回到顶部"
+            title="回到顶部"
+        >
+            ↑
+        </button>
+        <script>
+            {{DATA}}
+            {{APP_SCRIPT}}
+        </script>
+    </body>
+</html>

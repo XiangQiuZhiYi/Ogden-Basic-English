@@ -1,0 +1,1636 @@
+[
+  {
+    "id": "be-thing",
+    "family": "state",
+    "familyZh": "身份与状态",
+    "operators": [
+      "be"
+    ],
+    "formula": "THING + be + THING",
+    "functionZh": "说明身份、名称或归类",
+    "explanationZh": "be 把主语与说明其身份或类别的 thing 连接起来。",
+    "examples": [
+      {
+        "en": "This is a book.",
+        "zh": "这是一本书。"
+      },
+      {
+        "en": "A house is a building.",
+        "zh": "房屋是一种建筑。"
+      }
+    ],
+    "variations": [
+      "THIS/THAT + be + THING",
+      "THING + be + A/AN + THING"
+    ],
+    "commonMistakes": [
+      "单数可数 thing 通常不能遗漏 a/an 或其他限定词。"
+    ],
+    "grammarRefs": [
+      "basic-order",
+      "nouns-articles"
+    ],
+    "sourceRefs": [
+      "ogden-step-1"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "be-quality",
+    "family": "state",
+    "familyZh": "身份与状态",
+    "operators": [
+      "be"
+    ],
+    "formula": "THING + be + QUALITY",
+    "functionZh": "说明性质或状态",
+    "explanationZh": "quality 放在 be 后说明主语当前或一般具有的性质。",
+    "examples": [
+      {
+        "en": "The room is cold.",
+        "zh": "房间很冷。"
+      },
+      {
+        "en": "The answer is clear.",
+        "zh": "答案很清楚。"
+      }
+    ],
+    "variations": [
+      "THING + be + not + QUALITY"
+    ],
+    "commonMistakes": [
+      "quality 在 be 后不随主语变形。"
+    ],
+    "grammarRefs": [
+      "qualities-position"
+    ],
+    "sourceRefs": [
+      "ogden-step-1"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "be-direction",
+    "family": "state",
+    "familyZh": "身份与状态",
+    "operators": [
+      "be"
+    ],
+    "formula": "THING + be + DIRECTION (+ THING)",
+    "functionZh": "说明位置或关系",
+    "explanationZh": "direction 可以单独出现，也可带一个 thing 构成位置短语。",
+    "examples": [
+      {
+        "en": "The book is here.",
+        "zh": "书在这里。"
+      },
+      {
+        "en": "The book is on the table.",
+        "zh": "书在桌子上。"
+      }
+    ],
+    "variations": [
+      "THING + be + HERE/THERE",
+      "THING + be + DIRECTION + THING"
+    ],
+    "commonMistakes": [
+      "先判断是在说明静态位置，还是在说明移动方向。"
+    ],
+    "grammarRefs": [
+      "directions"
+    ],
+    "sourceRefs": [
+      "ogden-step-1"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "seem-quality",
+    "family": "state",
+    "familyZh": "身份与状态",
+    "operators": [
+      "seem"
+    ],
+    "formula": "THING + seem + QUALITY",
+    "functionZh": "表达观察后的判断",
+    "explanationZh": "seem 表示说话者根据表面情况作出判断，而不是直接断定。",
+    "examples": [
+      {
+        "en": "The room seems cold.",
+        "zh": "房间看起来很冷。"
+      },
+      {
+        "en": "The answer seems right.",
+        "zh": "这个答案看来是对的。"
+      }
+    ],
+    "variations": [
+      "IT + seem + QUALITY"
+    ],
+    "commonMistakes": [
+      "seem 后可直接接 quality，不需要额外使用 be。"
+    ],
+    "grammarRefs": [
+      "qualities-position"
+    ],
+    "sourceRefs": [
+      "ogden-course"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "get-quality",
+    "family": "change",
+    "familyZh": "取得与变化",
+    "operators": [
+      "get"
+    ],
+    "formula": "THING + get + QUALITY",
+    "functionZh": "说明进入某种状态",
+    "explanationZh": "get 与 quality 组合，表示状态发生变化。",
+    "examples": [
+      {
+        "en": "The water gets cold.",
+        "zh": "水变冷了。"
+      },
+      {
+        "en": "The room will get warm.",
+        "zh": "房间会暖起来。"
+      }
+    ],
+    "variations": [
+      "THING + will + get + QUALITY"
+    ],
+    "commonMistakes": [
+      "不要把表示结果的 quality 误当作 thing。"
+    ],
+    "grammarRefs": [
+      "qualities-position",
+      "operator-time"
+    ],
+    "sourceRefs": [
+      "ogden-course"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "have-thing",
+    "family": "possession",
+    "familyZh": "拥有与经历",
+    "operators": [
+      "have"
+    ],
+    "formula": "PERSON/THING + have + THING",
+    "functionZh": "表示拥有、包含或具有",
+    "explanationZh": "have 把拥有者或整体与其拥有、包含的 thing 联系起来。",
+    "examples": [
+      {
+        "en": "I have a question.",
+        "zh": "我有一个问题。"
+      },
+      {
+        "en": "The house has two rooms.",
+        "zh": "这所房子有两个房间。"
+      }
+    ],
+    "variations": [
+      "PERSON + do not + have + THING",
+      "Do + PERSON + have + THING?"
+    ],
+    "commonMistakes": [
+      "否定和疑问中的实义 have 通常借助 do。"
+    ],
+    "grammarRefs": [
+      "questions-negatives",
+      "nouns-articles"
+    ],
+    "sourceRefs": [
+      "ogden-course"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "have-action-thing",
+    "family": "action-thing",
+    "familyZh": "动作名词组合",
+    "operators": [
+      "have"
+    ],
+    "formula": "PERSON + have + ACTION-THING",
+    "functionZh": "表示经历或进行一次活动",
+    "explanationZh": "Basic 常用 have 加 action-thing，避免引入新的专门动词。",
+    "examples": [
+      {
+        "en": "We had a talk.",
+        "zh": "我们谈了一次。"
+      },
+      {
+        "en": "Have a look at this.",
+        "zh": "看看这个。"
+      }
+    ],
+    "variations": [
+      "have + A + TALK/LOOK/REST"
+    ],
+    "commonMistakes": [
+      "只有约定俗成且意义清楚的 action-thing 组合才自然。"
+    ],
+    "grammarRefs": [
+      "action-things"
+    ],
+    "sourceRefs": [
+      "ogden-general"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "do-action-thing",
+    "family": "action-thing",
+    "familyZh": "动作名词组合",
+    "operators": [
+      "do"
+    ],
+    "formula": "PERSON + do + ACTION-THING",
+    "functionZh": "执行工作或一般操作",
+    "explanationZh": "do 用于不强调产出物、而强调完成活动本身的结构。",
+    "examples": [
+      {
+        "en": "Do the work.",
+        "zh": "做这项工作。"
+      },
+      {
+        "en": "The fire did great damage.",
+        "zh": "火造成了很大损害。"
+      }
+    ],
+    "variations": [
+      "do + WORK/DAMAGE"
+    ],
+    "commonMistakes": [
+      "do 与 make 的选择取决于搭配和是否产生结果。"
+    ],
+    "grammarRefs": [
+      "action-things"
+    ],
+    "sourceRefs": [
+      "ogden-general"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "see-thing",
+    "family": "perception",
+    "familyZh": "感知与表达",
+    "operators": [
+      "see"
+    ],
+    "formula": "PERSON + see + THING",
+    "functionZh": "表示视觉感知",
+    "explanationZh": "see 直接以被看见的人或 thing 作宾语。",
+    "examples": [
+      {
+        "en": "I see the light.",
+        "zh": "我看见了光。"
+      },
+      {
+        "en": "She saw the ship.",
+        "zh": "她看见了那艘船。"
+      }
+    ],
+    "variations": [
+      "PERSON + may + see + THING"
+    ],
+    "commonMistakes": [
+      "表示直接看见某物时，see 后直接接 thing，不额外加入方向词。"
+    ],
+    "grammarRefs": [
+      "operators"
+    ],
+    "sourceRefs": [
+      "ogden-course"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "see-content",
+    "family": "perception",
+    "familyZh": "感知与表达",
+    "operators": [
+      "see"
+    ],
+    "formula": "PERSON + see + CONTENT",
+    "functionZh": "表示理解或明白",
+    "explanationZh": "see 也可表示在头脑中理解一个事实、原因或观点。",
+    "examples": [
+      {
+        "en": "I see your point.",
+        "zh": "我明白你的观点。"
+      },
+      {
+        "en": "Now I see why.",
+        "zh": "现在我明白原因了。"
+      }
+    ],
+    "variations": [
+      "PERSON + see + WHY/HOW + STATEMENT"
+    ],
+    "commonMistakes": [
+      "用上下文区分视觉感知和理解。"
+    ],
+    "grammarRefs": [
+      "clauses-connectives"
+    ],
+    "sourceRefs": [
+      "ogden-course"
+    ],
+    "reviewStatus": "项目编辑待复核"
+  },
+  {
+    "id": "say-content",
+    "family": "expression",
+    "familyZh": "感知与表达",
+    "operators": [
+      "say"
+    ],
+    "formula": "PERSON + say + CONTENT",
+    "functionZh": "说出词语或内容",
+    "explanationZh": "say 后面放所说的内容；接收者通常由 to 引出。",
+    "examples": [
+      {
+        "en": "Say it again.",
+        "zh": "再说一遍。"
+      },
+      {
+        "en": "He said that the work was done.",
+        "zh": "他说工作已经完成。"
+      }
+    ],
+    "variations": [
+      "say + THING + to + PERSON",
+      "say + THAT + STATEMENT"
+    ],
+    "commonMistakes": [
+      "不要把接收者直接放在 say 后而省略 to。"
+    ],
+    "grammarRefs": [
+      "clauses-connectives"
+    ],
+    "sourceRefs": [
+      "ogden-course"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "come-go-direct",
+    "family": "movement",
+    "familyZh": "移动与方向",
+    "operators": [
+      "come",
+      "go"
+    ],
+    "formula": "PERSON/THING + come/go + DIRECTION",
+    "functionZh": "表达直接移动方向",
+    "explanationZh": "come 表示朝说话者或参照点移动，go 表示离开参照点。",
+    "examples": [
+      {
+        "en": "Come here.",
+        "zh": "到这里来。"
+      },
+      {
+        "en": "Go out.",
+        "zh": "出去。"
+      }
+    ],
+    "variations": [
+      "come/go + HERE/THERE/IN/OUT/UP/DOWN"
+    ],
+    "commonMistakes": [
+      "根据参照点选择 come 或 go。"
+    ],
+    "grammarRefs": [
+      "directions"
+    ],
+    "sourceRefs": [
+      "ogden-step-1",
+      "ogden-step-3"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "come-go-endpoint",
+    "family": "movement",
+    "familyZh": "移动与方向",
+    "operators": [
+      "come",
+      "go"
+    ],
+    "formula": "PERSON/THING + come/go + from/to + THING",
+    "functionZh": "说明移动的起点或终点",
+    "explanationZh": "from 引出来源或起点，to 引出目标或终点。",
+    "examples": [
+      {
+        "en": "He came from the house.",
+        "zh": "他从房子那边来。"
+      },
+      {
+        "en": "Go to the station.",
+        "zh": "到车站去。"
+      }
+    ],
+    "variations": [
+      "come/go + FROM + START",
+      "come/go + TO + END"
+    ],
+    "commonMistakes": [
+      "from 引出起点，to 引出终点；选择时先确定移动相对参照点的方向。"
+    ],
+    "grammarRefs": [
+      "directions"
+    ],
+    "sourceRefs": [
+      "ogden-step-3"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "come-go-path",
+    "family": "movement",
+    "familyZh": "移动与方向",
+    "operators": [
+      "come",
+      "go"
+    ],
+    "formula": "PERSON/THING + come/go + through/across/over + THING",
+    "functionZh": "说明移动路径",
+    "explanationZh": "路径 direction 表示移动经过、横穿或越过的空间关系。",
+    "examples": [
+      {
+        "en": "Go through the door.",
+        "zh": "穿过这扇门。"
+      },
+      {
+        "en": "She went across the room.",
+        "zh": "她穿过了房间。"
+      }
+    ],
+    "variations": [
+      "come/go + PATH + THING"
+    ],
+    "commonMistakes": [
+      "through 强调从内部穿过，across 强调从一边到另一边。"
+    ],
+    "grammarRefs": [
+      "directions"
+    ],
+    "sourceRefs": [
+      "ogden-step-3"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "get-thing-from",
+    "family": "transfer",
+    "familyZh": "取得与转移",
+    "operators": [
+      "get"
+    ],
+    "formula": "PERSON + get + THING (+ from + PERSON/PLACE)",
+    "functionZh": "取得某物并可说明来源",
+    "explanationZh": "get 表示进入拥有某物的状态，from 可指出给予者或来源。",
+    "examples": [
+      {
+        "en": "I got a letter from him.",
+        "zh": "我从他那里收到一封信。"
+      },
+      {
+        "en": "Get the book from the table.",
+        "zh": "从桌上拿那本书。"
+      }
+    ],
+    "variations": [
+      "get + THING",
+      "get + THING + FROM + SOURCE"
+    ],
+    "commonMistakes": [
+      "说明来源时保持 get + thing + from + source 的次序。"
+    ],
+    "grammarRefs": [
+      "operators",
+      "directions"
+    ],
+    "sourceRefs": [
+      "ogden-step-3"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "take-thing-direction",
+    "family": "transfer",
+    "familyZh": "取得与转移",
+    "operators": [
+      "take"
+    ],
+    "formula": "PERSON + take + THING + DIRECTION",
+    "functionZh": "拿走或移动某物",
+    "explanationZh": "take 以被移动的 thing 作宾语，direction 说明它离开或到达的位置。",
+    "examples": [
+      {
+        "en": "Take the book off the table.",
+        "zh": "把书从桌上拿下来。"
+      },
+      {
+        "en": "Take this to your room.",
+        "zh": "把这个拿到你的房间。"
+      }
+    ],
+    "variations": [
+      "take + THING + OFF/OUT/FROM/TO"
+    ],
+    "commonMistakes": [
+      "需要说明移动关系时不要遗漏 direction。"
+    ],
+    "grammarRefs": [
+      "directions"
+    ],
+    "sourceRefs": [
+      "ogden-step-1",
+      "ogden-step-2"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "give-person-thing",
+    "family": "transfer",
+    "familyZh": "取得与转移",
+    "operators": [
+      "give"
+    ],
+    "formula": "PERSON + give + PERSON + THING",
+    "functionZh": "把某物给予某人",
+    "explanationZh": "接收者放在 thing 前时不使用 to。",
+    "examples": [
+      {
+        "en": "Give me the book.",
+        "zh": "把书给我。"
+      },
+      {
+        "en": "She gave him an answer.",
+        "zh": "她给了他一个答复。"
+      }
+    ],
+    "variations": [
+      "give + RECEIVER + THING"
+    ],
+    "commonMistakes": [
+      "不要在双宾语结构的接收者前再加 to。"
+    ],
+    "grammarRefs": [
+      "operators"
+    ],
+    "sourceRefs": [
+      "ogden-step-3"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "give-thing-to-person",
+    "family": "transfer",
+    "familyZh": "取得与转移",
+    "operators": [
+      "give"
+    ],
+    "formula": "PERSON + give + THING + to + PERSON",
+    "functionZh": "强调被给予的事物",
+    "explanationZh": "thing 先出现时，用 to 引出接收者。",
+    "examples": [
+      {
+        "en": "Give the book to me.",
+        "zh": "把书给我。"
+      },
+      {
+        "en": "I gave the answer to him.",
+        "zh": "我把答复给了他。"
+      }
+    ],
+    "variations": [
+      "give + THING + TO + RECEIVER"
+    ],
+    "commonMistakes": [
+      "使用 to 结构时，接收者放在 to 后；不要同时重复双宾语结构。"
+    ],
+    "grammarRefs": [
+      "operators",
+      "directions"
+    ],
+    "sourceRefs": [
+      "ogden-step-3"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "send-thing-direction",
+    "family": "transfer",
+    "familyZh": "取得与转移",
+    "operators": [
+      "send"
+    ],
+    "formula": "PERSON + send + THING/PERSON + DIRECTION",
+    "functionZh": "使人或物去往目标处",
+    "explanationZh": "send 表示使宾语离开当前地点，direction 说明目标或接收者。",
+    "examples": [
+      {
+        "en": "Send the letter to him.",
+        "zh": "把信寄给他。"
+      },
+      {
+        "en": "Send him to my room.",
+        "zh": "让他到我的房间来。"
+      }
+    ],
+    "variations": [
+      "send + PERSON + THING",
+      "send + THING/PERSON + TO + TARGET"
+    ],
+    "commonMistakes": [
+      "send 的对象和去向要清楚，避免让读者无法判断被发送的是人还是物。"
+    ],
+    "grammarRefs": [
+      "operators",
+      "directions"
+    ],
+    "sourceRefs": [
+      "ogden-course"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "make-thing",
+    "family": "causation",
+    "familyZh": "造成与控制",
+    "operators": [
+      "make"
+    ],
+    "formula": "PERSON + make + THING",
+    "functionZh": "制作、形成或产生事物",
+    "explanationZh": "make 强调形成一个结果或产出物。",
+    "examples": [
+      {
+        "en": "Make a copy.",
+        "zh": "做一份副本。"
+      },
+      {
+        "en": "They made a new road.",
+        "zh": "他们修了一条新路。"
+      }
+    ],
+    "variations": [
+      "make + A/AN + THING"
+    ],
+    "commonMistakes": [
+      "不要把所有中文“做”都机械翻成 make。"
+    ],
+    "grammarRefs": [
+      "action-things"
+    ],
+    "sourceRefs": [
+      "ogden-general"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "make-thing-quality",
+    "family": "causation",
+    "familyZh": "造成与控制",
+    "operators": [
+      "make"
+    ],
+    "formula": "PERSON + make + THING + QUALITY",
+    "functionZh": "使某物进入某种状态",
+    "explanationZh": "thing 是受到影响的对象，quality 是造成的结果。",
+    "examples": [
+      {
+        "en": "Make the room clean.",
+        "zh": "把房间弄干净。"
+      },
+      {
+        "en": "The fire made the room warm.",
+        "zh": "火使房间暖和了。"
+      }
+    ],
+    "variations": [
+      "make + OBJECT + RESULT-QUALITY"
+    ],
+    "commonMistakes": [
+      "结果 quality 前不使用 be。"
+    ],
+    "grammarRefs": [
+      "qualities-position"
+    ],
+    "sourceRefs": [
+      "ogden-general"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "keep-thing",
+    "family": "causation",
+    "familyZh": "造成与控制",
+    "operators": [
+      "keep"
+    ],
+    "formula": "PERSON + keep + THING",
+    "functionZh": "保留或继续拥有",
+    "explanationZh": "keep 直接接 thing 时，表示不交出、不丢弃或继续持有。",
+    "examples": [
+      {
+        "en": "Keep the letter.",
+        "zh": "把这封信留着。"
+      },
+      {
+        "en": "You may keep this book.",
+        "zh": "你可以留下这本书。"
+      }
+    ],
+    "variations": [
+      "may + keep + THING"
+    ],
+    "commonMistakes": [
+      "keep + thing 表示保留；表达保持某种状态时还需要在 thing 后加入 quality。"
+    ],
+    "grammarRefs": [
+      "operators"
+    ],
+    "sourceRefs": [
+      "ogden-course"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "keep-thing-quality",
+    "family": "causation",
+    "familyZh": "造成与控制",
+    "operators": [
+      "keep"
+    ],
+    "formula": "PERSON + keep + THING + QUALITY",
+    "functionZh": "维持某种状态",
+    "explanationZh": "quality 说明需要持续保持的结果状态。",
+    "examples": [
+      {
+        "en": "Keep the door open.",
+        "zh": "让门保持开着。"
+      },
+      {
+        "en": "Keep the food cold.",
+        "zh": "让食物保持低温。"
+      }
+    ],
+    "variations": [
+      "keep + OBJECT + STATE-QUALITY"
+    ],
+    "commonMistakes": [
+      "维持状态时不能遗漏对象后的 quality。"
+    ],
+    "grammarRefs": [
+      "qualities-position"
+    ],
+    "sourceRefs": [
+      "ogden-course"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "put-thing-direction",
+    "family": "causation",
+    "familyZh": "造成与控制",
+    "operators": [
+      "put"
+    ],
+    "formula": "PERSON + put + THING + DIRECTION",
+    "functionZh": "把某物放到某位置",
+    "explanationZh": "put 通常需要同时说明被放置的 thing 和位置或方向。",
+    "examples": [
+      {
+        "en": "Put the book on the table.",
+        "zh": "把书放在桌上。"
+      },
+      {
+        "en": "Put the flowers in the pot.",
+        "zh": "把花放进花盆。"
+      }
+    ],
+    "variations": [
+      "put + THING + IN/ON/UNDER/BY + THING"
+    ],
+    "commonMistakes": [
+      "只说 put the book 通常信息不完整。"
+    ],
+    "grammarRefs": [
+      "directions"
+    ],
+    "sourceRefs": [
+      "ogden-step-1",
+      "ogden-step-2"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "let-person-operator",
+    "family": "causation",
+    "familyZh": "造成与控制",
+    "operators": [
+      "let"
+    ],
+    "formula": "PERSON + let + PERSON/THING + OPERATOR",
+    "functionZh": "允许人或事物进行动作",
+    "explanationZh": "let 后先放被允许者，再直接放 operator 原形。",
+    "examples": [
+      {
+        "en": "Let him go.",
+        "zh": "让他走。"
+      },
+      {
+        "en": "Let me see it.",
+        "zh": "让我看看。"
+      }
+    ],
+    "variations": [
+      "let + OBJECT + OPERATOR-ROOT"
+    ],
+    "commonMistakes": [
+      "let 后的 operator 前不使用 to。"
+    ],
+    "grammarRefs": [
+      "operators"
+    ],
+    "sourceRefs": [
+      "ogden-course"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "may-operator",
+    "family": "modality",
+    "familyZh": "情态与时间",
+    "operators": [
+      "may"
+    ],
+    "formula": "PERSON/THING + may + OPERATOR",
+    "functionZh": "表示许可或可能",
+    "explanationZh": "may 后接 operator 原形；上下文决定是许可还是可能性。",
+    "examples": [
+      {
+        "en": "You may go now.",
+        "zh": "你现在可以走了。"
+      },
+      {
+        "en": "It may be true.",
+        "zh": "这可能是真的。"
+      }
+    ],
+    "variations": [
+      "May + PERSON + OPERATOR?",
+      "PERSON + may not + OPERATOR"
+    ],
+    "commonMistakes": [
+      "may 后面的 operator 不加第三人称或过去式变化。"
+    ],
+    "grammarRefs": [
+      "operator-time",
+      "questions-negatives"
+    ],
+    "sourceRefs": [
+      "ogden-general"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "will-operator",
+    "family": "modality",
+    "familyZh": "情态与时间",
+    "operators": [
+      "will"
+    ],
+    "formula": "PERSON/THING + will + OPERATOR",
+    "functionZh": "表示将来或意愿",
+    "explanationZh": "will 承担将来或意愿，后接 operator 原形。",
+    "examples": [
+      {
+        "en": "I will come tomorrow.",
+        "zh": "我明天会来。"
+      },
+      {
+        "en": "She will give you an answer.",
+        "zh": "她会给你答复。"
+      }
+    ],
+    "variations": [
+      "Will + PERSON + OPERATOR?",
+      "PERSON + will not + OPERATOR"
+    ],
+    "commonMistakes": [
+      "will 后不用过去式或第三人称形式。"
+    ],
+    "grammarRefs": [
+      "operator-time",
+      "questions-negatives"
+    ],
+    "sourceRefs": [
+      "ogden-general"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "make-action-thing",
+    "family": "action-thing",
+    "familyZh": "动作名词组合",
+    "operators": [
+      "make"
+    ],
+    "formula": "PERSON + make + ACTION-THING",
+    "functionZh": "产生决定、变化、尝试等结果",
+    "explanationZh": "将动作概念作为 thing，用 make 表示产生该结果。",
+    "examples": [
+      {
+        "en": "We made a decision.",
+        "zh": "我们作出了决定。"
+      },
+      {
+        "en": "He made an attempt.",
+        "zh": "他作了一次尝试。"
+      }
+    ],
+    "variations": [
+      "make + A/AN + DECISION/CHANGE/ATTEMPT/COPY"
+    ],
+    "commonMistakes": [
+      "action-thing 保持名词身份。"
+    ],
+    "grammarRefs": [
+      "action-things"
+    ],
+    "sourceRefs": [
+      "ogden-general"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "give-action-thing",
+    "family": "action-thing",
+    "familyZh": "动作名词组合",
+    "operators": [
+      "give"
+    ],
+    "formula": "PERSON + give + PERSON + ACTION-THING",
+    "functionZh": "把回答、帮助、命令或作用施向他人",
+    "explanationZh": "give 突出动作或信息的接收者。",
+    "examples": [
+      {
+        "en": "Give me an answer.",
+        "zh": "给我一个答复。"
+      },
+      {
+        "en": "He gave the door a push.",
+        "zh": "他推了一下门。"
+      }
+    ],
+    "variations": [
+      "give + PERSON + ANSWER/HELP/ORDER/PUSH"
+    ],
+    "commonMistakes": [
+      "并非所有 action-thing 都自然地与 give 搭配。"
+    ],
+    "grammarRefs": [
+      "action-things"
+    ],
+    "sourceRefs": [
+      "ogden-general"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "take-action-thing",
+    "family": "action-thing",
+    "familyZh": "动作名词组合",
+    "operators": [
+      "take"
+    ],
+    "formula": "PERSON + take + ACTION-THING",
+    "functionZh": "进行一次短活动或采取步骤",
+    "explanationZh": "take 与部分 action-things 构成约定搭配。",
+    "examples": [
+      {
+        "en": "Take a look at this.",
+        "zh": "看看这个。"
+      },
+      {
+        "en": "We took a walk.",
+        "zh": "我们散了步。"
+      }
+    ],
+    "variations": [
+      "take + A + LOOK/WALK/REST/STEP"
+    ],
+    "commonMistakes": [
+      "搭配必须逐条学习，不能任意替换 action-thing。"
+    ],
+    "grammarRefs": [
+      "action-things"
+    ],
+    "sourceRefs": [
+      "ogden-general"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "statement-negative",
+    "family": "transformation",
+    "familyZh": "句子变换",
+    "operators": [
+      "do",
+      "be",
+      "have",
+      "may",
+      "will"
+    ],
+    "formula": "PERSON + do not + OPERATOR / PERSON + be|may|will + not",
+    "functionZh": "把陈述变为否定",
+    "explanationZh": "一般 operator 借助 do；be、may、will 直接接 not。",
+    "examples": [
+      {
+        "en": "I do not see it.",
+        "zh": "我没有看见它。"
+      },
+      {
+        "en": "It is not clear.",
+        "zh": "这并不清楚。"
+      }
+    ],
+    "variations": [
+      "SUBJECT + DO NOT + ROOT",
+      "SUBJECT + BE/MAY/WILL + NOT"
+    ],
+    "commonMistakes": [
+      "do 已承担时态时，后面的 operator 回到原形。"
+    ],
+    "grammarRefs": [
+      "questions-negatives"
+    ],
+    "sourceRefs": [
+      "ogden-general"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "general-question",
+    "family": "transformation",
+    "familyZh": "句子变换",
+    "operators": [
+      "do",
+      "be",
+      "have",
+      "may",
+      "will"
+    ],
+    "formula": "Do + PERSON + OPERATOR ...? / Be|May|Will + PERSON ...?",
+    "functionZh": "构成一般疑问句",
+    "explanationZh": "一般 operator 用 do 提问；be、may、will 移到主语前。",
+    "examples": [
+      {
+        "en": "Do you see it?",
+        "zh": "你看见它了吗？"
+      },
+      {
+        "en": "May I go?",
+        "zh": "我可以走吗？"
+      }
+    ],
+    "variations": [
+      "DO + SUBJECT + ROOT?",
+      "BE/MAY/WILL + SUBJECT ...?"
+    ],
+    "commonMistakes": [
+      "使用 did 时后面的 operator 不再用过去式。"
+    ],
+    "grammarRefs": [
+      "questions-negatives"
+    ],
+    "sourceRefs": [
+      "ogden-general"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "question-word",
+    "family": "transformation",
+    "familyZh": "句子变换",
+    "operators": [
+      "do",
+      "be",
+      "have",
+      "may",
+      "will"
+    ],
+    "formula": "QUESTION-WORD + QUESTION ORDER?",
+    "functionZh": "询问人物、事物、地点、时间、原因或方式",
+    "explanationZh": "疑问词放在一般疑问结构前；疑问词本身作主语时不再加另一个主语。",
+    "examples": [
+      {
+        "en": "Where is the book?",
+        "zh": "书在哪里？"
+      },
+      {
+        "en": "Why did he go?",
+        "zh": "他为什么走了？"
+      }
+    ],
+    "variations": [
+      "WHO/WHAT/WHERE/WHEN/WHY/HOW + QUESTION"
+    ],
+    "commonMistakes": [
+      "注意疑问词作主语和作其他成分时的词序不同。"
+    ],
+    "grammarRefs": [
+      "questions-negatives"
+    ],
+    "sourceRefs": [
+      "ogden-general"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "imperative",
+    "family": "transformation",
+    "familyZh": "句子变换",
+    "operators": [
+      "come",
+      "get",
+      "give",
+      "go",
+      "keep",
+      "let",
+      "make",
+      "put",
+      "take",
+      "do",
+      "say",
+      "see",
+      "send"
+    ],
+    "formula": "OPERATOR + COMPLEMENT",
+    "functionZh": "发出指示、请求或建议",
+    "explanationZh": "命令句省略通常为 you 的主语，直接以 operator 原形开头。",
+    "examples": [
+      {
+        "en": "Put the book here.",
+        "zh": "把书放在这里。"
+      },
+      {
+        "en": "Please come in.",
+        "zh": "请进。"
+      }
+    ],
+    "variations": [
+      "PLEASE + OPERATOR + COMPLEMENT",
+      "DO NOT + OPERATOR + COMPLEMENT"
+    ],
+    "commonMistakes": [
+      "命令句开头使用 operator 原形。"
+    ],
+    "grammarRefs": [
+      "basic-order",
+      "questions-negatives"
+    ],
+    "sourceRefs": [
+      "ogden-course"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "add-time-place-manner",
+    "family": "expansion",
+    "familyZh": "信息扩展",
+    "operators": [
+      "come",
+      "go",
+      "put",
+      "take",
+      "send"
+    ],
+    "formula": "CORE STATEMENT + DIRECTION/PLACE + TIME/MANNER",
+    "functionZh": "给句子增加地点、时间或方式",
+    "explanationZh": "先完成短主干，再把地点、时间或方式逐层加到句尾；需要强调时也可前置。",
+    "examples": [
+      {
+        "en": "I will come here tomorrow.",
+        "zh": "我明天会到这里来。"
+      },
+      {
+        "en": "She put the book on the table slowly.",
+        "zh": "她慢慢地把书放在桌上。"
+      }
+    ],
+    "variations": [
+      "TIME/PLACE + CORE STATEMENT",
+      "CORE + PLACE + TIME"
+    ],
+    "commonMistakes": [
+      "不要直接照搬中文长句顺序。"
+    ],
+    "grammarRefs": [
+      "basic-order",
+      "directions"
+    ],
+    "sourceRefs": [
+      "ogden-step-3"
+    ],
+    "reviewStatus": "项目编辑待复核"
+  },
+  {
+    "id": "connect-statements",
+    "family": "expansion",
+    "familyZh": "信息扩展",
+    "operators": [],
+    "formula": "STATEMENT + CONNECTIVE + STATEMENT",
+    "functionZh": "连接并列、原因、条件、让步或时间关系",
+    "explanationZh": "连接词让两个完整或共享成分的结构形成更复杂的信息。",
+    "examples": [
+      {
+        "en": "I came because he sent for me.",
+        "zh": "我来了，因为他派人找我。"
+      },
+      {
+        "en": "Come if you are ready.",
+        "zh": "如果你准备好了，就来吧。"
+      }
+    ],
+    "variations": [
+      "A + AND/BUT/OR + B",
+      "A + BECAUSE/IF/THOUGH/WHILE + B"
+    ],
+    "commonMistakes": [
+      "复杂句仍应保持每个分句内部的基本词序。"
+    ],
+    "grammarRefs": [
+      "clauses-connectives"
+    ],
+    "sourceRefs": [
+      "ogden-general"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "there-be-existence",
+    "family": "state",
+    "familyZh": "存在与呈现",
+    "operators": [
+      "be"
+    ],
+    "formula": "There + be + THING (+ DIRECTION/PLACE)",
+    "functionZh": "引出某人、某物的存在或数量",
+    "explanationZh": "there 先占据句子位置，be 再引出存在的 thing；地点通常放在后面。",
+    "examples": [
+      {
+        "en": "There is a book on the table.",
+        "zh": "桌上有一本书。"
+      },
+      {
+        "en": "There are some books in the room.",
+        "zh": "房间里有一些书。"
+      }
+    ],
+    "variations": [
+      "THERE + IS + SINGULAR THING",
+      "THERE + ARE + PLURAL THINGS"
+    ],
+    "commonMistakes": [
+      "be 通常与后面最先出现的 thing 在单复数上协调。"
+    ],
+    "grammarRefs": [
+      "existence-presentation"
+    ],
+    "sourceRefs": [
+      "ogden-general"
+    ],
+    "reviewStatus": "项目编辑待复核"
+  },
+  {
+    "id": "determiner-quality-thing",
+    "family": "thing-building",
+    "familyZh": "构造事物表达",
+    "operators": [],
+    "formula": "DETERMINER + QUALITY + THING",
+    "functionZh": "限定范围并描述一个事物",
+    "explanationZh": "限定词放在整个 thing 表达的开头，quality 位于中心 thing 之前。",
+    "examples": [
+      {
+        "en": "This is a small box.",
+        "zh": "这是一个小盒子。"
+      },
+      {
+        "en": "Every good system has a clear rule.",
+        "zh": "每个好系统都有清楚的规则。"
+      }
+    ],
+    "variations": [
+      "A/THE/THIS/THAT + QUALITY + THING",
+      "ALL/SOME/ANY/EVERY + THING"
+    ],
+    "commonMistakes": [
+      "单数可数 thing 要有合适的限定词；quality 不因复数而变化。"
+    ],
+    "grammarRefs": [
+      "nouns-articles",
+      "determiners-pronouns",
+      "qualities-position"
+    ],
+    "sourceRefs": [
+      "ogden-step-1"
+    ],
+    "reviewStatus": "项目编辑待复核"
+  },
+  {
+    "id": "some-any-quantity",
+    "family": "thing-building",
+    "familyZh": "构造事物表达",
+    "operators": [
+      "have"
+    ],
+    "formula": "some/any + PLURAL THING or AMOUNT",
+    "functionZh": "表达不具体的数量或范围",
+    "explanationZh": "some 常用于肯定陈述；any 常用于疑问、否定或“不论哪一个”的范围。",
+    "examples": [
+      {
+        "en": "I have some water.",
+        "zh": "我有一些水。"
+      },
+      {
+        "en": "Do you have any bread?",
+        "zh": "你有面包吗？"
+      }
+    ],
+    "variations": [
+      "SOME + THING",
+      "ANY + THING",
+      "NOT + ANY + THING"
+    ],
+    "commonMistakes": [
+      "先判断 thing 是可数复数还是不可数数量，再选择形式。"
+    ],
+    "grammarRefs": [
+      "nouns-articles",
+      "determiners-pronouns"
+    ],
+    "sourceRefs": [
+      "ogden-general"
+    ],
+    "reviewStatus": "项目编辑待复核"
+  },
+  {
+    "id": "comparison-than",
+    "family": "quality",
+    "familyZh": "性质与比较",
+    "operators": [
+      "be"
+    ],
+    "formula": "THING + be + COMPARATIVE QUALITY + than + THING",
+    "functionZh": "比较两个对象的不等程度",
+    "explanationZh": "比较形式说明第一项在某种性质上高于或低于第二项，than 引出比较基准。",
+    "examples": [
+      {
+        "en": "This box is smaller than that box.",
+        "zh": "这个盒子比那个盒子小。"
+      },
+      {
+        "en": "This road is wider than that road.",
+        "zh": "这条路比那条路宽。"
+      }
+    ],
+    "variations": [
+      "-ER QUALITY + THAN",
+      "MORE/LESS + QUALITY + THAN"
+    ],
+    "commonMistakes": [
+      "只有语义可分程度的 quality 才能比较；不规则形式要单独掌握。"
+    ],
+    "grammarRefs": [
+      "quality-comparison"
+    ],
+    "sourceRefs": [
+      "ogden-general"
+    ],
+    "reviewStatus": "项目编辑待复核"
+  },
+  {
+    "id": "equality-as",
+    "family": "quality",
+    "familyZh": "性质与比较",
+    "operators": [
+      "be"
+    ],
+    "formula": "THING + be + as + QUALITY + as + THING",
+    "functionZh": "表达两个对象在某性质上程度相同",
+    "explanationZh": "第一个 as 放在 quality 前，第二个 as 引出比较对象。",
+    "examples": [
+      {
+        "en": "This room is as warm as that room.",
+        "zh": "这个房间和那个房间一样暖。"
+      },
+      {
+        "en": "This road is as wide as that road.",
+        "zh": "这条路和那条路一样宽。"
+      }
+    ],
+    "variations": [
+      "AS + QUALITY + AS",
+      "NOT + AS + QUALITY + AS"
+    ],
+    "commonMistakes": [
+      "同等比较必须保留前后两个 as。"
+    ],
+    "grammarRefs": [
+      "quality-comparison"
+    ],
+    "sourceRefs": [
+      "ogden-general"
+    ],
+    "reviewStatus": "项目编辑待复核"
+  },
+  {
+    "id": "part-of-relation",
+    "family": "relation",
+    "familyZh": "事物关系",
+    "operators": [
+      "be"
+    ],
+    "formula": "THING + of + THING",
+    "functionZh": "表达部分、所属、材料、数量或主题关系",
+    "explanationZh": "of 把两个 things 连接起来；具体关系由两侧事物和语境共同决定。",
+    "examples": [
+      {
+        "en": "The top of the box is open.",
+        "zh": "盒子的顶部是打开的。"
+      },
+      {
+        "en": "The colour of the wall is white.",
+        "zh": "墙的颜色是白色的。"
+      }
+    ],
+    "variations": [
+      "PART + OF + WHOLE",
+      "AMOUNT + OF + THING"
+    ],
+    "commonMistakes": [
+      "不要把所有中文“的”都机械换成 of；先判断英语中的关系。"
+    ],
+    "grammarRefs": [
+      "basic-order",
+      "nouns-articles"
+    ],
+    "sourceRefs": [
+      "ogden-general"
+    ],
+    "reviewStatus": "项目编辑待复核"
+  },
+  {
+    "id": "time-before-after",
+    "family": "expansion",
+    "familyZh": "时间关系",
+    "operators": [
+      "come",
+      "go",
+      "be"
+    ],
+    "formula": "STATEMENT + before/after/till/when + TIME or STATEMENT",
+    "functionZh": "说明事件的先后、持续终点或发生时间",
+    "explanationZh": "时间结构可以连接一个时间 thing，也可以连接另一个具有完整主干的事件。",
+    "examples": [
+      {
+        "en": "I came before the rain.",
+        "zh": "我在下雨前来了。"
+      },
+      {
+        "en": "He went after the meeting.",
+        "zh": "他在会议之后走了。"
+      }
+    ],
+    "variations": [
+      "BEFORE/AFTER + TIME",
+      "WHEN + STATEMENT",
+      "TILL + TIME"
+    ],
+    "commonMistakes": [
+      "连接完整事件时，时间分句内部仍要有清楚的主干。"
+    ],
+    "grammarRefs": [
+      "clauses-connectives",
+      "operator-time"
+    ],
+    "sourceRefs": [
+      "ogden-general"
+    ],
+    "reviewStatus": "项目编辑待复核"
+  },
+  {
+    "id": "relative-who-that",
+    "family": "expansion",
+    "familyZh": "识别与说明",
+    "operators": [],
+    "formula": "THING + who/that + STATEMENT",
+    "functionZh": "给人物或事物增加识别信息",
+    "explanationZh": "who 通常连接人物信息；that 可连接人物或事物，并把说明紧接在被说明的 thing 后。",
+    "examples": [
+      {
+        "en": "The man who came here is my friend.",
+        "zh": "来到这里的那个人是我的朋友。"
+      },
+      {
+        "en": "The book that you gave me is here.",
+        "zh": "你给我的那本书在这里。"
+      }
+    ],
+    "variations": [
+      "PERSON + WHO + STATEMENT",
+      "THING + THAT + STATEMENT"
+    ],
+    "commonMistakes": [
+      "先确定 who/that 在说明哪个 thing，避免说明信息离它过远。"
+    ],
+    "grammarRefs": [
+      "clauses-connectives"
+    ],
+    "sourceRefs": [
+      "ogden-general"
+    ],
+    "reviewStatus": "项目编辑待复核"
+  },
+  {
+    "id": "focus-only-even",
+    "family": "expansion",
+    "familyZh": "范围与强调",
+    "operators": [],
+    "formula": "only/even + FOCUS",
+    "functionZh": "限制信息范围或突出意外成分",
+    "explanationZh": "only 与 even 尽量紧靠所限制或强调的词组，以免改变句意。",
+    "examples": [
+      {
+        "en": "Only he saw the change.",
+        "zh": "只有他看到了变化。"
+      },
+      {
+        "en": "Even he saw the change.",
+        "zh": "连他也看到了变化。"
+      }
+    ],
+    "variations": [
+      "ONLY + PERSON/THING/AMOUNT",
+      "EVEN + PERSON/THING/STATEMENT"
+    ],
+    "commonMistakes": [
+      "移动 only 可能改变限制范围；写完后要检查意思是否唯一。"
+    ],
+    "grammarRefs": [
+      "scope-degree-placement"
+    ],
+    "sourceRefs": [
+      "grammar-summary"
+    ],
+    "reviewStatus": "项目编辑待复核"
+  },
+  {
+    "id": "degree-enough-almost",
+    "family": "quality",
+    "familyZh": "程度与界限",
+    "operators": [
+      "be"
+    ],
+    "formula": "almost + STATE / QUALITY + enough",
+    "functionZh": "表达接近界限或达到需要的程度",
+    "explanationZh": "almost 表示尚未完全达到；enough 放在 quality 后表示程度已经满足需要。",
+    "examples": [
+      {
+        "en": "The work is almost complete.",
+        "zh": "工作几乎完成了。"
+      },
+      {
+        "en": "The water is warm enough.",
+        "zh": "水已经够暖了。"
+      }
+    ],
+    "variations": [
+      "ALMOST + QUALITY/AMOUNT",
+      "QUALITY + ENOUGH",
+      "ENOUGH + THING"
+    ],
+    "commonMistakes": [
+      "almost 和 enough 表达的界限方向不同，不要混用。"
+    ],
+    "grammarRefs": [
+      "scope-degree-placement"
+    ],
+    "sourceRefs": [
+      "grammar-summary"
+    ],
+    "reviewStatus": "项目编辑待复核"
+  }
+]

@@ -1,0 +1,807 @@
+[
+  {
+    "id": "basic-order",
+    "chapter": "foundations",
+    "chapterZh": "系统基础",
+    "titleZh": "基本句序与句子主干",
+    "summaryZh": "先确定主语和 operator，再加入对象、性质、方向、地点或时间。",
+    "explanationZh": [
+      "Basic English 依靠较稳定的英语词序表达词与词之间的关系。",
+      "最短主干通常是 SUBJECT + OPERATOR；需要时再加入受到作用的 THING 和补充信息。",
+      "be 不表示对对象执行动作，而是把主语与身份、性质或位置连接起来。"
+    ],
+    "formulas": [
+      "SUBJECT + OPERATOR + THING",
+      "SUBJECT + be + THING / QUALITY / DIRECTION",
+      "SUBJECT + OPERATOR + THING + DIRECTION / TIME / MANNER"
+    ],
+    "appliesWhen": [
+      "陈述动作、状态、位置和关系",
+      "构造较长句子前先建立短主干"
+    ],
+    "limitations": [
+      "强调成分可以前置，但初学阶段优先使用普通词序",
+      "不能把任意 thing 直接当作 operator"
+    ],
+    "examples": [
+      {
+        "en": "I put the book on the table.",
+        "zh": "我把书放在桌上。",
+        "noteZh": "主语、operator、thing、direction 依次出现。"
+      },
+      {
+        "en": "The book is on the table.",
+        "zh": "书在桌上。",
+        "noteZh": "be 连接主语和位置。"
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "I the book on the table put.",
+        "better": "I put the book on the table.",
+        "reasonZh": "不要照搬其他语言的语序。"
+      }
+    ],
+    "patternRefs": [
+      "be-thing",
+      "be-quality",
+      "be-direction",
+      "put-thing-direction",
+      "add-time-place-manner",
+      "there-be-existence",
+      "part-of-relation"
+    ],
+    "sourceRefs": [
+      "ogden-step-1"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "operators",
+    "chapter": "operators",
+    "chapterZh": "Operators",
+    "titleZh": "18 个 operators 如何承担动作",
+    "summaryZh": "16 个操作词加 may、will 构成 Basic English 的动作和情态核心。",
+    "explanationZh": [
+      "operators 是 Basic English 中可以像普通英语动词那样发生主要形式变化的一组词。",
+      "大量普通英语动词可拆成 operator + thing、quality 或 direction，例如用 get off the ship 表达离船。",
+      "学习 operator 时必须同时学习它允许的宾语、补语和固定组合。"
+    ],
+    "formulas": [
+      "OPERATOR + THING",
+      "OPERATOR + DIRECTION",
+      "OPERATOR + THING + QUALITY / DIRECTION"
+    ],
+    "appliesWhen": [
+      "表达动作、变化、转移、状态、感知或言说"
+    ],
+    "limitations": [
+      "语法上能组合不代表搭配自然",
+      "thing 在严格 Basic 中不因普通英语习惯而自动获得动词用法"
+    ],
+    "examples": [
+      {
+        "en": "Give him a push.",
+        "zh": "推他一下。",
+        "noteZh": "用 give + action-thing 表达动作。"
+      },
+      {
+        "en": "Make the room clean.",
+        "zh": "把房间弄干净。",
+        "noteZh": "make 造成一个结果状态。"
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "Decision it now.",
+        "better": "Make a decision now.",
+        "reasonZh": "decision 是 thing，需要 operator。"
+      }
+    ],
+    "patternRefs": [
+      "get-thing-from",
+      "give-person-thing",
+      "make-thing-quality",
+      "let-person-operator"
+    ],
+    "sourceRefs": [
+      "ogden-general",
+      "ogden-step-1"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "operator-time",
+    "chapter": "operators",
+    "chapterZh": "Operators",
+    "titleZh": "operator 的形式与时间",
+    "summaryZh": "现在、过去、完成和将来主要由 operator 的形式以及时间词表达。",
+    "explanationZh": [
+      "第三人称单数现在时通常在 operator 后加 -s 或使用相应形式。",
+      "be、do、have、come、go、give、get、take 等包含需要单独掌握的不规则形式。",
+      "may 和 will 后接 operator 原形；完成结构由 have 加过去分词构成。"
+    ],
+    "formulas": [
+      "PRESENT / PAST",
+      "will + OPERATOR ROOT",
+      "have + OPERATOR PARTICIPLE"
+    ],
+    "appliesWhen": [
+      "说明事件发生的时间",
+      "表达将来、完成或可能"
+    ],
+    "limitations": [
+      "时间形式必须与主语和上下文一致",
+      "do 已承担时间时，后面的 operator 使用原形"
+    ],
+    "examples": [
+      {
+        "en": "I came yesterday.",
+        "zh": "我昨天来了。",
+        "noteZh": "came 同时表达 come 和过去时间。"
+      },
+      {
+        "en": "I will come tomorrow.",
+        "zh": "我明天会来。",
+        "noteZh": "will 后使用 come 原形。"
+      },
+      {
+        "en": "He has done the work.",
+        "zh": "他已经完成了工作。",
+        "noteZh": "has + done 构成完成结构。"
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "He will comes tomorrow.",
+        "better": "He will come tomorrow.",
+        "reasonZh": "will 后使用 operator 原形。"
+      }
+    ],
+    "patternRefs": [
+      "may-operator",
+      "will-operator",
+      "time-before-after"
+    ],
+    "sourceRefs": [
+      "ogden-step-1",
+      "ogden-step-3"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "questions-negatives",
+    "chapter": "sentence-operations",
+    "chapterZh": "句子操作",
+    "titleZh": "否定、一般疑问与特殊疑问",
+    "summaryZh": "一般 operator 借助 do；be、may、will 可直接否定或移到主语前。",
+    "explanationZh": [
+      "一般否定使用 do not + operator 原形，一般疑问把 do 放在主语前。",
+      "be、may、will 本身可承担句子操作，直接接 not 或移到主语前。",
+      "who、what、where、when、why、how 等疑问词通常放在疑问结构前。"
+    ],
+    "formulas": [
+      "SUBJECT + do not + OPERATOR",
+      "Do + SUBJECT + OPERATOR?",
+      "QUESTION WORD + QUESTION ORDER?"
+    ],
+    "appliesWhen": [
+      "否定信息",
+      "提出是非问题或具体信息问题"
+    ],
+    "limitations": [
+      "疑问词作主语时结构不同",
+      "标准书面语中不随意省略必要的辅助形式"
+    ],
+    "examples": [
+      {
+        "en": "I do not see it.",
+        "zh": "我没有看见它。",
+        "noteZh": "do 承担否定。"
+      },
+      {
+        "en": "Do you see it?",
+        "zh": "你看见它了吗？",
+        "noteZh": "do 移到主语前。"
+      },
+      {
+        "en": "Where is the book?",
+        "zh": "书在哪里？",
+        "noteZh": "where 位于疑问结构前。"
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "Did he went?",
+        "better": "Did he go?",
+        "reasonZh": "did 已表示过去，go 回到原形。"
+      }
+    ],
+    "patternRefs": [
+      "statement-negative",
+      "general-question",
+      "question-word",
+      "imperative"
+    ],
+    "sourceRefs": [
+      "ogden-general"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "directions",
+    "chapter": "expansion",
+    "chapterZh": "扩展表达",
+    "titleZh": "directions：位置、方向与动作组合",
+    "summaryZh": "direction 既说明空间关系，也与 operator 组合形成透明的动作表达。",
+    "explanationZh": [
+      "in、on、under、over、between 等说明静态位置。",
+      "from、to、through、across、off 等说明移动的起点、终点、路径或分离。",
+      "同一 direction 与不同 operator 组合时整体作用会变化，但仍应从各部分理解。"
+    ],
+    "formulas": [
+      "be + DIRECTION + THING",
+      "come/go + DIRECTION",
+      "put/take/send + THING + DIRECTION"
+    ],
+    "appliesWhen": [
+      "说明位置关系",
+      "说明移动路径或改变位置"
+    ],
+    "limitations": [
+      "介词选择取决于具体空间关系",
+      "有些组合已形成固定习惯，需要结合例句学习"
+    ],
+    "examples": [
+      {
+        "en": "The book is on the table.",
+        "zh": "书在桌上。",
+        "noteZh": "静态位置。"
+      },
+      {
+        "en": "Go through the door.",
+        "zh": "穿过这扇门。",
+        "noteZh": "移动路径。"
+      },
+      {
+        "en": "Take the coat off.",
+        "zh": "把外套脱下来。",
+        "noteZh": "off 表示分离。"
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "Put the book.",
+        "better": "Put the book on the table.",
+        "reasonZh": "put 通常需要位置或方向补足信息。"
+      }
+    ],
+    "patternRefs": [
+      "be-direction",
+      "come-go-direct",
+      "come-go-endpoint",
+      "come-go-path",
+      "take-thing-direction",
+      "put-thing-direction",
+      "send-thing-direction"
+    ],
+    "sourceRefs": [
+      "ogden-step-1",
+      "ogden-step-2",
+      "ogden-step-3"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "action-things",
+    "chapter": "operators",
+    "chapterZh": "Operators",
+    "titleZh": "action-thing：用 thing 表达动作概念",
+    "summaryZh": "attack、answer、decision、talk 等优先保持 thing 身份，由 operator 使动作发生。",
+    "explanationZh": [
+      "Basic English 有意减少普通动词数量，因此许多动作概念由 operator + action-thing 表达。",
+      "make 常强调产生结果，give 常强调作用指向接收者，have 和 take 常表示进行或经历。",
+      "组合必须逐条学习；不能把任何 action-thing 与任意 operator 自由配对。"
+    ],
+    "formulas": [
+      "make + ACTION-THING",
+      "give + PERSON + ACTION-THING",
+      "have/take + ACTION-THING",
+      "do + WORK/DAMAGE"
+    ],
+    "appliesWhen": [
+      "850 词中的 thing 表示一个动作概念",
+      "需要避开非核心专门动词"
+    ],
+    "limitations": [
+      "优先使用已核验的自然搭配",
+      "同一 action-thing 与不同 operator 组合可能改变意义"
+    ],
+    "examples": [
+      {
+        "en": "We made a decision.",
+        "zh": "我们作出了决定。",
+        "noteZh": "decision 保持 thing 身份。"
+      },
+      {
+        "en": "Give him an answer.",
+        "zh": "给他一个答复。",
+        "noteZh": "give 引出接收者。"
+      },
+      {
+        "en": "We had a talk.",
+        "zh": "我们谈了一次。",
+        "noteZh": "have 表示进行一次活动。"
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "We decisioned it.",
+        "better": "We made a decision.",
+        "reasonZh": "不要把 thing 机械变成动词。"
+      }
+    ],
+    "patternRefs": [
+      "make-action-thing",
+      "give-action-thing",
+      "have-action-thing",
+      "take-action-thing",
+      "do-action-thing"
+    ],
+    "sourceRefs": [
+      "ogden-general"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "nouns-articles",
+    "chapter": "things-qualities",
+    "chapterZh": "Things 与 Qualities",
+    "titleZh": "things、冠词、数量与复数",
+    "summaryZh": "thing 根据可数性、单复数和是否已确定选择 a/an、the、some 或 any。",
+    "explanationZh": [
+      "第一次提到一个单数可数 thing 时通常使用 a/an。",
+      "the 指向双方已知、前文提到或语境中唯一的对象。",
+      "复数只在词义允许时使用；规则形式加 -s/-es，不规则形式单独记录。"
+    ],
+    "formulas": [
+      "a/an + SINGULAR THING",
+      "the + KNOWN THING",
+      "some/any + PLURAL OR AMOUNT"
+    ],
+    "appliesWhen": [
+      "引入或再次指代 thing",
+      "说明数量和范围"
+    ],
+    "limitations": [
+      "不可数意义通常不直接使用 a/an",
+      "同一词在不同义项中可数性可能不同"
+    ],
+    "examples": [
+      {
+        "en": "I have a book.",
+        "zh": "我有一本书。",
+        "noteZh": "首次引入单数可数 thing。"
+      },
+      {
+        "en": "The book is here.",
+        "zh": "这本书在这里。",
+        "noteZh": "再次指代已知对象。"
+      },
+      {
+        "en": "Do you have any water?",
+        "zh": "你有水吗？",
+        "noteZh": "疑问中使用 any。"
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "I have book.",
+        "better": "I have a book.",
+        "reasonZh": "单数可数 thing 需要限定词。"
+      }
+    ],
+    "patternRefs": [
+      "be-thing",
+      "have-thing",
+      "determiner-quality-thing",
+      "some-any-quantity",
+      "part-of-relation"
+    ],
+    "sourceRefs": [
+      "ogden-step-1",
+      "ogden-general"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "qualities-position",
+    "chapter": "things-qualities",
+    "chapterZh": "Things 与 Qualities",
+    "titleZh": "qualities 的位置和结果补语",
+    "summaryZh": "quality 可修饰 thing、说明主语状态，或说明对象被造成、保持的结果。",
+    "explanationZh": [
+      "quality 直接放在 thing 前时用于限定或描述该 thing。",
+      "quality 放在 be、seem、get 后时说明主语的状态或变化。",
+      "quality 放在 make、keep 的对象后时说明造成或维持的结果。"
+    ],
+    "formulas": [
+      "QUALITY + THING",
+      "THING + be/seem/get + QUALITY",
+      "make/keep + THING + QUALITY"
+    ],
+    "appliesWhen": [
+      "描述人或事物",
+      "表达状态变化或结果"
+    ],
+    "limitations": [
+      "quality 不随 thing 的单复数变化",
+      "关系性质和绝对性质不一定适合比较"
+    ],
+    "examples": [
+      {
+        "en": "This is a small box.",
+        "zh": "这是一个小盒子。",
+        "noteZh": "quality 放在 thing 前。"
+      },
+      {
+        "en": "The box is small.",
+        "zh": "盒子很小。",
+        "noteZh": "be 后说明状态。"
+      },
+      {
+        "en": "Keep it dry.",
+        "zh": "让它保持干燥。",
+        "noteZh": "dry 是维持的结果。"
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "Make the room be clean.",
+        "better": "Make the room clean.",
+        "reasonZh": "结果 quality 前不需要 be。"
+      }
+    ],
+    "patternRefs": [
+      "be-quality",
+      "seem-quality",
+      "get-quality",
+      "make-thing-quality",
+      "keep-thing-quality",
+      "determiner-quality-thing"
+    ],
+    "sourceRefs": [
+      "ogden-step-1"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "quality-comparison",
+    "chapter": "things-qualities",
+    "chapterZh": "Things 与 Qualities",
+    "titleZh": "qualities 的程度与比较",
+    "summaryZh": "Basic 可用 more/most 表示程度，也保留标准英语中正常使用的比较形式。",
+    "explanationZh": [
+      "比较两个不等对象时，比较形式后通常使用 than。",
+      "表示同等程度可使用 as + quality + as。",
+      "good、bad 等不规则形式以及常见 -er/-est 形式需要逐条记录。"
+    ],
+    "formulas": [
+      "more/less + QUALITY + than",
+      "as + QUALITY + as",
+      "PERMITTED -er/-est FORM"
+    ],
+    "appliesWhen": [
+      "比较性质的程度",
+      "表达最高程度或相等程度"
+    ],
+    "limitations": [
+      "first、dead、left 等不可机械套比较级",
+      "关系性质只有在语义可分程度时才比较"
+    ],
+    "examples": [
+      {
+        "en": "This box is smaller than that.",
+        "zh": "这个盒子比那个小。",
+        "noteZh": "标准比较形式加 than。"
+      },
+      {
+        "en": "This road is as wide as that road.",
+        "zh": "这条路和那条路一样宽。",
+        "noteZh": "as...as 表示同等程度。"
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "This is the firster step.",
+        "better": "This is the first step.",
+        "reasonZh": "first 本身表示次序，不能机械比较。"
+      }
+    ],
+    "patternRefs": [
+      "comparison-than",
+      "equality-as"
+    ],
+    "sourceRefs": [
+      "ogden-general"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "determiners-pronouns",
+    "chapter": "things-qualities",
+    "chapterZh": "Things 与 Qualities",
+    "titleZh": "限定、指代与代词形式",
+    "summaryZh": "限定词确定 thing 的范围；代词根据主语、宾语和所属关系改变形式。",
+    "explanationZh": [
+      "this/that 指向单个对象，these/those 指向多个对象。",
+      "代词作主语、宾语或所属限定时使用不同形式，例如 I/me/my。",
+      "all、every、some、any、much、little 等必须与 thing 的数量和意义协调。"
+    ],
+    "formulas": [
+      "DETERMINER + QUALITY + THING",
+      "SUBJECT-PRONOUN + OPERATOR + OBJECT-PRONOUN",
+      "POSSESSIVE + THING"
+    ],
+    "appliesWhen": [
+      "确定对象范围",
+      "避免重复名词或说明所属"
+    ],
+    "limitations": [
+      "this/that 与 these/those 要和数量一致",
+      "much/little 主要修饰不可数意义"
+    ],
+    "examples": [
+      {
+        "en": "Give me some water.",
+        "zh": "给我一些水。",
+        "noteZh": "me 作宾语，some 限定 water。"
+      },
+      {
+        "en": "These books are mine.",
+        "zh": "这些书是我的。",
+        "noteZh": "these 与复数一致，mine 独立表示所属。"
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "Give I the book.",
+        "better": "Give me the book.",
+        "reasonZh": "operator 后的宾语使用 me。"
+      }
+    ],
+    "patternRefs": [
+      "give-person-thing",
+      "have-thing",
+      "determiner-quality-thing",
+      "some-any-quantity"
+    ],
+    "sourceRefs": [
+      "ogden-step-1"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "clauses-connectives",
+    "chapter": "expansion",
+    "chapterZh": "扩展表达",
+    "titleZh": "并列、从句与修饰信息",
+    "summaryZh": "连接词组合完整信息，疑问词也可引导从句；方式修饰通常靠许可的 -ly 形式。",
+    "explanationZh": [
+      "and、but、or 连接并列的词、短语或句子。",
+      "because、if、though、while 分别建立原因、条件、让步和时间关系。",
+      "who、what、when、where、why、how 可用于提问，也可把补充信息连接进句子。"
+    ],
+    "formulas": [
+      "STATEMENT + CONNECTIVE + STATEMENT",
+      "THING + WHO/THAT + STATEMENT",
+      "OPERATOR + MANNER"
+    ],
+    "appliesWhen": [
+      "表达两个信息之间的逻辑关系",
+      "给 thing 增加识别信息"
+    ],
+    "limitations": [
+      "每个分句内部仍保持基本词序",
+      "只有规则许可且自然使用的 quality 才形成 -ly 修饰语"
+    ],
+    "examples": [
+      {
+        "en": "I came because he sent for me.",
+        "zh": "我来了，因为他派人找我。",
+        "noteZh": "because 引出原因。"
+      },
+      {
+        "en": "Come if you are ready.",
+        "zh": "如果你准备好了，就来吧。",
+        "noteZh": "if 引出条件。"
+      },
+      {
+        "en": "The man who came here is my friend.",
+        "zh": "来到这里的那个人是我的朋友。",
+        "noteZh": "who 引入识别信息。"
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "Because he sent for me, so I came.",
+        "better": "I came because he sent for me.",
+        "reasonZh": "避免同时重复两个承担同一连接作用的词。"
+      }
+    ],
+    "patternRefs": [
+      "say-content",
+      "see-content",
+      "connect-statements",
+      "add-time-place-manner",
+      "time-before-after",
+      "relative-who-that"
+    ],
+    "sourceRefs": [
+      "ogden-general",
+      "ogden-step-1"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "word-forms-boundary",
+    "chapter": "boundaries",
+    "chapterZh": "词形与边界",
+    "titleZh": "许可词形、派生、复合与额外词层",
+    "summaryZh": "850 是核心词根层；许可词形和明确标记的特殊词不应混入核心词数量。",
+    "explanationZh": [
+      "operators 和代词可使用完整的标准形式，things 可使用意义允许的复数。",
+      "部分 things 可形成 -er、-ing、-ed 等标准且有实际用途的派生，qualities 可形成 -ly、un- 和比较形式。",
+      "专名、数字、度量、日历、国际词和必要专业术语属于额外词层，应显式标记。"
+    ],
+    "formulas": [
+      "CORE 850 + PERMITTED FORMS",
+      "TRANSPARENT COMPOUND",
+      "MARKED SPECIAL WORD"
+    ],
+    "appliesWhen": [
+      "检查例句是否仍属于 Basic English 范围",
+      "解释为什么表面词形多于 850"
+    ],
+    "limitations": [
+      "派生必须是标准英语中实际使用的形式",
+      "复合词不能成为无限扩张词义的借口"
+    ],
+    "examples": [
+      {
+        "en": "The train will go north.",
+        "zh": "火车将向北行驶。",
+        "noteZh": "operator 变化和方向词都在允许范围内。"
+      },
+      {
+        "en": "The books are here.",
+        "zh": "这些书在这里。",
+        "noteZh": "books 是 thing 的规则复数。"
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "This road is firster.",
+        "better": "This is the first road.",
+        "reasonZh": "不能用拼写算法制造不存在的比较形式。"
+      }
+    ],
+    "patternRefs": [
+      "will-operator"
+    ],
+    "sourceRefs": [
+      "ogden-general",
+      "grammar-summary"
+    ],
+    "reviewStatus": "结构已核验"
+  },
+  {
+    "id": "existence-presentation",
+    "chapter": "foundations",
+    "chapterZh": "系统基础",
+    "titleZh": "there + be：引出存在与数量",
+    "summaryZh": "用非地点义的 there 占据主语位置，再用 be 引出某处存在的人或事物。",
+    "explanationZh": [
+      "存在结构先告诉听者“有某物”，再说明该物是什么、多少以及在哪里。",
+      "be 的单复数通常与后面最先出现的 thing 协调：There is a book；There are some books。",
+      "存在结构中的 there 不等于“在那里”；真正的地点信息通常另行放在句末。"
+    ],
+    "formulas": [
+      "There + be + THING",
+      "There + be + THING + DIRECTION/PLACE"
+    ],
+    "appliesWhen": [
+      "第一次引出一个人或事物",
+      "说明某处存在什么或有多少"
+    ],
+    "limitations": [
+      "说明已知对象的位置时优先使用 THING + be + PLACE",
+      "不要把存在 there 与表示地点的 there 混为一义"
+    ],
+    "examples": [
+      {
+        "en": "There is a book on the table.",
+        "zh": "桌上有一本书。",
+        "noteZh": "there 引出一个单数 thing，使用 is。"
+      },
+      {
+        "en": "There are some books in the room.",
+        "zh": "房间里有一些书。",
+        "noteZh": "后面是复数 books，使用 are。"
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "There is some books in the room.",
+        "better": "There are some books in the room.",
+        "reasonZh": "be 要与后面的复数 books 协调。"
+      }
+    ],
+    "patternRefs": [
+      "there-be-existence"
+    ],
+    "sourceRefs": [
+      "ogden-general",
+      "grammar-summary"
+    ],
+    "reviewStatus": "项目编辑待复核"
+  },
+  {
+    "id": "scope-degree-placement",
+    "chapter": "things-qualities",
+    "chapterZh": "Things 与 Qualities",
+    "titleZh": "范围词与程度词的位置",
+    "summaryZh": "only、even、almost 紧靠其作用对象；very、quite 放在 quality 前，enough 的位置取决于它修饰什么。",
+    "explanationZh": [
+      "范围词的位置决定句子限制或强调的是人物、事物、数量还是整个陈述。",
+      "very、quite、so 等通常放在 quality 前；almost 放在尚未完全达到的状态、数量或范围前。",
+      "enough 放在 thing 前表示数量足够，放在 quality 后表示程度达到需要。"
+    ],
+    "formulas": [
+      "ONLY/EVEN/ALMOST + FOCUS",
+      "VERY/QUITE/SO + QUALITY",
+      "ENOUGH + THING / QUALITY + ENOUGH"
+    ],
+    "appliesWhen": [
+      "限制或特别强调信息范围",
+      "表达性质的强度或是否达到需要"
+    ],
+    "limitations": [
+      "only 的位置改变可能改变意思",
+      "程度词不能机械地与所有 qualities 组合"
+    ],
+    "examples": [
+      {
+        "en": "Only he saw the change.",
+        "zh": "只有他看到了变化。",
+        "noteZh": "only 紧靠 he，限制人物范围。"
+      },
+      {
+        "en": "The water is warm enough.",
+        "zh": "水已经够暖了。",
+        "noteZh": "enough 放在 quality warm 后。"
+      },
+      {
+        "en": "The work is almost complete.",
+        "zh": "工作几乎完成了。",
+        "noteZh": "almost 表示接近但尚未完全达到。"
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "The water is enough warm.",
+        "better": "The water is warm enough.",
+        "reasonZh": "修饰 quality 时，enough 通常放在 quality 后。"
+      }
+    ],
+    "patternRefs": [
+      "focus-only-even",
+      "degree-enough-almost"
+    ],
+    "sourceRefs": [
+      "ogden-general",
+      "grammar-summary"
+    ],
+    "reviewStatus": "项目编辑待复核"
+  }
+]

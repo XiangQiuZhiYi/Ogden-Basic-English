@@ -1,0 +1,57 @@
+{
+  "version": "2026-09-23.4",
+  "schemaVersion": 2,
+  "categories": {
+    "operations": {
+      "zh": "操作及结构词",
+      "en": "Operations",
+      "count": 100,
+      "tone": "#b45309"
+    },
+    "general_things": {
+      "zh": "一般事物词",
+      "en": "General Things",
+      "count": 400,
+      "tone": "#0f766e"
+    },
+    "picturable_things": {
+      "zh": "可图示事物词",
+      "en": "Picturable Things",
+      "count": 200,
+      "tone": "#2563eb"
+    },
+    "qualities_general": {
+      "zh": "一般性质词",
+      "en": "General Qualities",
+      "count": 100,
+      "tone": "#7c3aed"
+    },
+    "qualities_opposites": {
+      "zh": "反对性质词",
+      "en": "Opposite Qualities",
+      "count": 50,
+      "tone": "#be123c"
+    }
+  },
+  "operators": [
+    "come",
+    "get",
+    "give",
+    "go",
+    "keep",
+    "let",
+    "make",
+    "put",
+    "seem",
+    "take",
+    "be",
+    "do",
+    "have",
+    "say",
+    "see",
+    "send",
+    "may",
+    "will"
+  ],
+  "distribution": "single-file-offline"
+}
