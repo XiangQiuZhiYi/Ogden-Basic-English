@@ -110,11 +110,28 @@
                             <input id="onlyUnlearned" type="checkbox" />
                             <span>只看未学习</span>
                         </label
+                        ><button
+                            class="toolbar-btn practice-open"
+                            id="practiceOpen"
+                            type="button"
+                            aria-haspopup="dialog"
+                            aria-controls="practiceLayer"
+                        >
+                            练习
+                        </button
                         ><button class="toolbar-btn" id="clear">
                             重置
                         </button>
                     </div>
                     <div class="filters" id="filters"></div>
+                    <div class="practice-status" id="practiceStatus" hidden>
+                        <span
+                            ><strong id="practiceModeLabel">练习模式</strong
+                            ><small>点击遮挡区域显示答案</small></span
+                        ><button id="practiceExit" type="button">
+                            退出练习
+                        </button>
+                    </div>
                 </div>
             </div>
             <main class="shell content">
@@ -1604,6 +1621,57 @@
         >
             ↑
         </button>
+        <div class="practice-layer" id="practiceLayer" hidden>
+            <button
+                class="practice-backdrop"
+                type="button"
+                data-practice-close
+                aria-label="关闭练习模式选择"
+            ></button>
+            <section
+                class="practice-sheet"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="practiceTitle"
+            >
+                <div class="practice-grip" aria-hidden="true"></div>
+                <header>
+                    <div>
+                        <small>Mobile recall / 手机记忆练习</small>
+                        <h2 id="practiceTitle">选择练习方式</h2>
+                    </div>
+                    <button
+                        class="practice-close"
+                        type="button"
+                        data-practice-close
+                        aria-label="关闭"
+                    >
+                        ×
+                    </button>
+                </header>
+                <div class="practice-options">
+                    <button type="button" data-practice-mode="word">
+                        <strong>看中文，回忆英文</strong
+                        ><span>隐藏单词、拼写变体和 IPA</span>
+                    </button>
+                    <button type="button" data-practice-mode="meaning">
+                        <strong>看英文，回忆中文</strong
+                        ><span>隐藏词卡上的中文释义</span>
+                    </button>
+                    <button type="button" data-practice-mode="random">
+                        <strong>随机测试</strong
+                        ><span>每张卡随机隐藏英文或中文</span>
+                    </button>
+                </div>
+                <button
+                    class="practice-off"
+                    type="button"
+                    data-practice-mode="off"
+                >
+                    全部显示并退出练习
+                </button>
+            </section>
+        </div>
         <script>
             {{DATA}}
             {{APP_SCRIPT}}

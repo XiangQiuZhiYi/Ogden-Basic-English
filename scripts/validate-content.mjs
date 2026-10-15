@@ -204,8 +204,20 @@ for (const placeholder of ['{{STYLES}}', '{{DATA}}', '{{APP_SCRIPT}}', '{{VERSIO
 if (!template.includes('id="onlyUnlearned"')) {
   fail('Template is missing the only-unlearned filter control.');
 }
+for (const id of ['practiceOpen', 'practiceStatus', 'practiceLayer', 'practiceExit']) {
+  if (!template.includes(`id="${id}"`)) fail(`Template is missing the ${id} practice control.`);
+}
 if (!/onlyUnlearned:\s*false/u.test(appScript)) {
   fail('App state is missing the onlyUnlearned flag.');
+}
+if (!/practiceMode:\s*loadPracticeMode\(\)/u.test(appScript)) {
+  fail('App state is missing the persisted practice mode.');
+}
+for (const mode of ['word', 'meaning', 'random']) {
+  if (!template.includes(`data-practice-mode="${mode}"`)) fail(`Template is missing practice mode ${mode}.`);
+}
+for (const action of ['data-reveal', 'data-practice-known', 'data-practice-review']) {
+  if (!appScript.includes(action)) fail(`Practice card rendering is missing ${action}.`);
 }
 if (!/!state\.onlyUnlearned\s*\|\|\s*!state\.learned\.has\(word\.id\)/u.test(appScript)) {
   fail('Word filtering does not exclude learned words when onlyUnlearned is active.');

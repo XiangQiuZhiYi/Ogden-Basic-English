@@ -1,5 +1,12 @@
 const PAGE_SIZE = 80;
 const MODULE_IDS = ['words', 'grammar', 'patterns', 'communication'];
+const PRACTICE_MODES = ['off', 'word', 'meaning', 'random'];
+const PRACTICE_LABELS = {
+  off: '练习',
+  word: '回忆英文',
+  meaning: '回忆中文',
+  random: '随机测试',
+};
 const WORD_IDS = new Set(WORDS.map(word => word.id));
 const $ = selector => document.querySelector(selector);
 const esc = value => String(value).replace(
@@ -48,12 +55,32 @@ function saveModule(id) {
   }
 }
 
+function loadPracticeMode() {
+  try {
+    const value = localStorage.getItem('ogden850.practiceMode') || 'off';
+    return PRACTICE_MODES.includes(value) ? value : 'off';
+  } catch {
+    return 'off';
+  }
+}
+
+function savePracticeMode(mode) {
+  try {
+    localStorage.setItem('ogden850.practiceMode', mode);
+  } catch {
+    // Practice mode still works for the current page when storage is unavailable.
+  }
+}
+
 const state = {
   category: 'all',
   subgroup: 'all',
   onlyUnlearned: false,
   visible: PAGE_SIZE,
   learned: new Set(loadLearned()),
+  practiceMode: loadPracticeMode(),
+  practiceSeed: Math.floor(Math.random() * 2147483647),
+  revealed: new Set(),
   patternFamily: 'all',
   patternOperator: 'all',
 };
@@ -265,6 +292,9 @@ function initialise() {
     render();
   });
 
+  $('#practiceOpen').addEventListener('click', openPracticePicker);
+  $('#practiceExit').addEventListener('click', () => setPracticeMode('off'));
+
   $('#loadMore').addEventListener('click', () => {
     state.visible += PAGE_SIZE;
     render();
@@ -278,6 +308,47 @@ function initialise() {
   );
 
   document.addEventListener('click', event => {
+    const practiceMode = event.target.closest('[data-practice-mode]');
+    if (practiceMode) {
+      setPracticeMode(practiceMode.dataset.practiceMode);
+      return;
+    }
+    if (event.target.closest('[data-practice-close]')) {
+      closePracticePicker();
+      return;
+    }
+    const reveal = event.target.closest('[data-reveal]');
+    if (reveal) {
+      event.preventDefault();
+      event.stopPropagation();
+      revealPracticeWord(reveal.dataset.reveal);
+      return;
+    }
+    const known = event.target.closest('[data-practice-known]');
+    if (known) {
+      event.preventDefault();
+      event.stopPropagation();
+      answerPracticeWord(known.dataset.practiceKnown, true, known);
+      return;
+    }
+    const review = event.target.closest('[data-practice-review]');
+    if (review) {
+      event.preventDefault();
+      event.stopPropagation();
+      answerPracticeWord(review.dataset.practiceReview, false, review);
+      return;
+    }
+    const cardSummary = event.target.closest('.word-card > summary');
+    if (
+      cardSummary
+      && state.practiceMode !== 'off'
+      && !event.target.closest('button')
+      && !state.revealed.has(cardSummary.parentElement.dataset.wordCard)
+    ) {
+      event.preventDefault();
+      revealPracticeWord(cardSummary.parentElement.dataset.wordCard);
+      return;
+    }
     const patternLink = event.target.closest('[data-pattern-ref]');
     if (patternLink) {
       event.preventDefault();
@@ -301,7 +372,12 @@ function initialise() {
     }
   });
 
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && !$('#practiceLayer').hidden) closePracticePicker();
+  });
+
   syncControls();
+  syncPracticeControls();
   render();
   updateProgress();
   setupVoices();
@@ -324,6 +400,76 @@ function syncControls() {
   state.subgroup = $('#subgroup').value;
   $('#onlyUnlearned').checked = state.onlyUnlearned;
   $('#activeLabel').textContent = activeFilterLabel();
+}
+
+function openPracticePicker() {
+  const layer = $('#practiceLayer');
+  layer.hidden = false;
+  document.body.classList.add('practice-sheet-open');
+  syncPracticeControls();
+  const selected = layer.querySelector(`[data-practice-mode="${state.practiceMode}"]`)
+    || layer.querySelector('[data-practice-mode]');
+  selected?.focus();
+}
+
+function closePracticePicker() {
+  $('#practiceLayer').hidden = true;
+  document.body.classList.remove('practice-sheet-open');
+  $('#practiceOpen').focus();
+}
+
+function setPracticeMode(mode) {
+  state.practiceMode = PRACTICE_MODES.includes(mode) ? mode : 'off';
+  state.revealed.clear();
+  state.practiceSeed = Math.floor(Math.random() * 2147483647);
+  savePracticeMode(state.practiceMode);
+  syncPracticeControls();
+  closePracticePicker();
+  render();
+}
+
+function syncPracticeControls() {
+  const active = state.practiceMode !== 'off';
+  $('#practiceStatus').hidden = !active;
+  $('#practiceModeLabel').textContent = PRACTICE_LABELS[state.practiceMode];
+  $('#practiceOpen').textContent = active ? PRACTICE_LABELS[state.practiceMode] : '练习';
+  $('#practiceOpen').classList.toggle('on', active);
+  document.querySelectorAll('[data-practice-mode]').forEach(button => {
+    button.setAttribute('aria-pressed', String(button.dataset.practiceMode === state.practiceMode));
+  });
+}
+
+function practiceSide(word) {
+  if (state.practiceMode !== 'random') return state.practiceMode;
+  let hash = state.practiceSeed;
+  for (const character of word.id) hash = ((hash << 5) - hash + character.charCodeAt(0)) | 0;
+  return Math.abs(hash) % 2 === 0 ? 'word' : 'meaning';
+}
+
+function replaceWordCard(id) {
+  const element = [...document.querySelectorAll('[data-word-card]')]
+    .find(item => item.dataset.wordCard === id);
+  const word = WORDS.find(item => item.id === id);
+  if (!element || !word) return;
+  element.outerHTML = card(word);
+}
+
+function revealPracticeWord(id) {
+  if (state.practiceMode === 'off' || !WORD_IDS.has(id)) return;
+  state.revealed.add(id);
+  replaceWordCard(id);
+}
+
+function answerPracticeWord(id, known, control) {
+  if (!WORD_IDS.has(id)) return;
+  if (known) state.learned.add(id);
+  else state.learned.delete(id);
+  saveLearned([...state.learned]);
+  updateProgress();
+  state.revealed.delete(id);
+  const wordCard = control.closest('.word-card');
+  wordCard?.classList.add(known ? 'practice-known' : 'practice-review');
+  window.setTimeout(render, 360);
 }
 
 function activeFilterLabel() {
@@ -359,23 +505,31 @@ function card(word) {
   const learned = state.learned.has(word.id);
   const operator = OPERATORS.includes(word.word);
   const firstExample = word.senses?.[0]?.examples?.[0]?.en || word.example;
+  const practiceActive = state.practiceMode !== 'off';
+  const revealed = state.revealed.has(word.id);
+  const concealedSide = practiceActive && !revealed ? practiceSide(word) : 'off';
+  const concealWord = concealedSide === 'word';
+  const concealMeaning = concealedSide === 'meaning';
+  const wordContent = `<span class="word">${esc(word.word)}${word.us ? ` <small title="美式拼写">/ ${esc(word.us)}</small>` : ''}</span><span class="ipa">${esc(word.ipa)}</span>`;
   return `
-    <details class="word-card">
+    <details class="word-card ${practiceActive ? 'practice-card' : ''}" data-word-card="${esc(word.id)}">
       <summary>
         <div class="word-top">
-          <div>
-            <div class="word">${esc(word.word)}${word.us ? ` <small title="美式拼写">/ ${esc(word.us)}</small>` : ''}</div>
-            <div class="ipa">${esc(word.ipa)}</div>
-          </div>
+          ${concealWord
+            ? `<button class="recall-target recall-word" type="button" data-reveal="${esc(word.id)}" aria-label="显示英文单词"><span class="recall-blur" aria-hidden="true">${wordContent}</span><span class="recall-prompt">点击显示单词</span></button>`
+            : `<div class="recall-answer">${wordContent}</div>`}
           <div class="badges">
             ${operator ? '<span class="badge" style="color:#b45309">18-op</span>' : ''}
             <span class="badge" style="color:${category.tone}">${esc(category.en)} / ${esc(category.zh)}</span>
           </div>
         </div>
-        <p class="gloss">${esc(word.zh)}</p>
+        ${concealMeaning
+          ? `<button class="recall-target recall-meaning" type="button" data-reveal="${esc(word.id)}" aria-label="显示中文意思"><span class="recall-blur" aria-hidden="true">${esc(word.zh)}</span><span class="recall-prompt">点击显示意思</span></button>`
+          : `<p class="gloss">${esc(word.zh)}</p>`}
         <div class="mini"><span>${esc(word.pos)} · ${esc(word.subgroup)}</span><span>#${word.originalIndex + 1}</span></div>
+        ${practiceActive && revealed ? `<div class="practice-answer-actions"><button type="button" data-practice-review="${esc(word.id)}">再复习</button><button type="button" data-practice-known="${esc(word.id)}">认识 ✓</button></div>` : ''}
         <div class="quick-actions">
-          <button class="quick" data-speak="${esc(word.word)}" aria-label="朗读 ${esc(word.word)}" title="朗读单词">▶</button>
+          ${concealWord ? '' : `<button class="quick" data-speak="${esc(word.word)}" aria-label="朗读 ${esc(word.word)}" title="朗读单词">▶</button>`}
           <button class="quick ${learned ? 'on' : ''}" data-learn="${esc(word.id)}" aria-label="${learned ? '取消已学习' : '标记已学习'}" title="${learned ? '已学习' : '标记已学习'}">${learned ? '✓' : '○'}</button>
         </div>
       </summary>
